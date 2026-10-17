@@ -35,13 +35,19 @@ runs.
 
 ## The look and the diagrams
 
+The theme is a local checkout until it is published:
+`"@agentplot/site-theme": "file:/Users/chuck/Code/github_agentplot/site-theme/main"`
+in `package.json`, which the Pages workflow cannot install. It moves to
+`github:agentplot/site-theme#<tag>` once the theme's repository is on
+GitHub and tagged.
+
 | file | what |
 |---|---|
-| `src/styles/brand.css` | eddy's accent, `--eddy-accent`, and the family's type and colors over Starlight's, in both themes; the diagrams' colors |
+| `@agentplot/site-theme` | the family's type, colours, bar, footer and family diagram, and eddy's accent from its list, `--ap-accent` (`astro.config.mjs`) |
+| `src/styles/brand.css` | what is eddy's own over the theme: the diagrams' colours, from the theme's tokens |
 | `src/components/Hero.astro` | the start page's hero, with the animated diagram; other pages keep Starlight's |
 | `src/components/Diagram.astro` | a diagram, inlined: its wide layout, and its narrow one on a phone |
 | `src/components/Flow.astro`, `Step.astro` | the start page's four steps; their prose is in `index.mdx` |
-| `src/components/FamilyDiagramPlaceholder.astro` | **a placeholder** for `@agentplot/site-theme`'s family diagram, on the "How it fits" page |
 
 `src/generated/` is **generated**, by `scripts/diagrams.mjs` running
 `docs/diagrams/diagrams.py --scoped` before every build and dev, and is

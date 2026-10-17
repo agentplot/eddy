@@ -5,10 +5,8 @@
     "": {
       "name": "eddy-site",
       "dependencies": {
+        "@agentplot/site-theme": "file:/Users/chuck/Code/github_agentplot/site-theme/main",
         "@astrojs/starlight": "0.42.6",
-        "@fontsource/ibm-plex-mono": "5.3.0",
-        "@fontsource/ibm-plex-sans": "5.3.0",
-        "@fontsource/space-grotesk": "5.3.0",
         "astro": "7.3.8",
         "sharp": "0.35.5",
         "starlight-links-validator": "0.27.0",
@@ -19,6 +17,8 @@
     },
   },
   "packages": {
+    "@agentplot/site-theme": ["@agentplot/site-theme@file:../../../site-theme/main", { "dependencies": { "@fontsource/ibm-plex-mono": "5.3.0", "@fontsource/ibm-plex-sans": "5.3.0", "@fontsource/space-grotesk": "5.3.0" }, "devDependencies": { "@astrojs/starlight": "0.42.6", "astro": "7.3.8", "playwright": "1.61.1" }, "peerDependencies": { "@astrojs/starlight": ">=0.42.0", "astro": ">=7.2.0" }, "optionalPeers": ["@astrojs/starlight"] }],
+
     "@astrojs/compiler-binding": ["@astrojs/compiler-binding@0.5.2", "", { "optionalDependencies": { "@astrojs/compiler-binding-android-arm64": "0.5.2", "@astrojs/compiler-binding-darwin-arm64": "0.5.2", "@astrojs/compiler-binding-darwin-x64": "0.5.2", "@astrojs/compiler-binding-linux-arm64-gnu": "0.5.2", "@astrojs/compiler-binding-linux-arm64-musl": "0.5.2", "@astrojs/compiler-binding-linux-x64-gnu": "0.5.2", "@astrojs/compiler-binding-linux-x64-musl": "0.5.2", "@astrojs/compiler-binding-wasm32-wasi": "0.5.2", "@astrojs/compiler-binding-win32-arm64-msvc": "0.5.2", "@astrojs/compiler-binding-win32-x64-msvc": "0.5.2" } }, "sha512-lEn76+0JcMQ5RDXU0wSMWJg2ZppiZvSULpghC29cfv4o9bhvWFDbQjsCtvjjXN9iVLFQ7fL3wTR2L2UU13mP8g=="],
 
     "@astrojs/compiler-binding-android-arm64": ["@astrojs/compiler-binding-android-arm64@0.5.2", "", { "os": "android", "cpu": "arm64" }, "sha512-kckIxon6Rm/Bxzh9mGPYpRRqUbToUQoHptCmpMmE+Yt0Xumq8CqrKUidyYhrBsrHVO7bxuRzzWUUqvpf+iYceQ=="],

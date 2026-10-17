@@ -19,11 +19,17 @@ export default defineConfig({
         alt: 'eddy',
       },
       favicon: '/favicon.svg',
-      // The start page's hero, with the animated diagram; every other page
-      // keeps Starlight's.
-      components: { Hero: './src/components/Hero.astro' },
-      // eddy's accent and the family's type over Starlight's.
-      customCss: ['./src/styles/brand.css'],
+      // The family's bar and footer from @agentplot/site-theme, which find
+      // eddy by the title above; the start page's hero, with the animated
+      // diagram, where every other page keeps Starlight's.
+      components: {
+        Header: '@agentplot/site-theme/starlight/Header.astro',
+        Footer: '@agentplot/site-theme/starlight/Footer.astro',
+        Hero: './src/components/Hero.astro',
+      },
+      // The family's type, colours and eddy's accent from the theme, then
+      // what is eddy's own: the diagrams' palette.
+      customCss: ['@agentplot/site-theme/starlight.css', './src/styles/brand.css'],
       social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/agentplot/eddy' }],
       editLink: {
         baseUrl: 'https://github.com/agentplot/eddy/edit/main/site/',

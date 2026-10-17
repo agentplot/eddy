@@ -11,10 +11,8 @@
     "shots": "node scripts/shots.mjs"
   },
   "dependencies": {
+    "@agentplot/site-theme": "file:/Users/chuck/Code/github_agentplot/site-theme/main",
     "@astrojs/starlight": "0.42.6",
-    "@fontsource/ibm-plex-mono": "5.3.0",
-    "@fontsource/ibm-plex-sans": "5.3.0",
-    "@fontsource/space-grotesk": "5.3.0",
     "astro": "7.3.8",
     "sharp": "0.35.5",
     "starlight-links-validator": "0.27.0"
