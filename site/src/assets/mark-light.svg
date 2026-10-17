@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="6 16 112 88" width="112" height="88" role="img" aria-label="eddy">
+  <title>eddy</title>
+  <g fill="none" stroke="#0E1116" stroke-width="6" stroke-linecap="round">
+    <path d="M18 28 C 50 28, 60 40, 80 44"/>
+    <path d="M18 60 L 72 60"/>
+    <path d="M18 92 C 50 92, 60 80, 80 76"/>
+  </g>
+  <g fill="#0E1116">
+    <circle cx="18" cy="28" r="8"/>
+    <circle cx="18" cy="60" r="8"/>
+    <circle cx="18" cy="92" r="8"/>
+  </g>
+  <circle cx="94" cy="60" r="20" fill="#6B4FD8"/>
+  <path d="M85 60 A 9 9 0 1 1 94 69 A 5 5 0 0 1 89 64" fill="none" stroke="#F7F6F2" stroke-width="5" stroke-linecap="round"/>
+</svg>

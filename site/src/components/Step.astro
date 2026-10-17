@@ -1,0 +1,150 @@
+---
+// One of the start page's four steps: a small drawing of it, a numbered
+// title and the page's prose. `kind` picks the drawing.
+interface Props {
+  kind: 'list' | 'key' | 'keep' | 'read';
+  title: string;
+}
+const { kind, title } = Astro.props;
+---
+
+<li class="step">
+  <svg viewBox="0 0 220 96" aria-hidden="true">
+    {
+      kind === 'list' && (
+        <g>
+          {['wispr', 'webex', 'teams'].map((s, i) => (
+            <g>
+              <rect class="row" x="10" y={8 + i * 28} width="70" height="22" rx="5" />
+              <text class="mono" x="45" y={23 + i * 28} text-anchor="middle">{s}</text>
+              <path class="rule" d={`M84 ${19 + i * 28} C 110 ${19 + i * 28}, 110 48, 132 48`} />
+            </g>
+          ))}
+          <rect class="chip" x="134" y="34" width="76" height="28" rx="6" />
+          <text class="chipt" x="172" y="52" text-anchor="middle">model 0</text>
+        </g>
+      )
+    }
+    {
+      kind === 'key' && (
+        <g>
+          <rect class="row" x="10" y="26" width="200" height="30" rx="6" />
+          <text class="mono big" x="20" y="46">
+            meeting/<tspan class="accent">wispr</tspan>/7f3c2a
+          </text>
+          <text x="20" y="80">the same key on every run</text>
+        </g>
+      )
+    }
+    {
+      kind === 'keep' &&
+        [['transcript.json', 'as served'], ['transcript.txt', 'one line per turn']].map(([f, n], i) => (
+          <g>
+            <path class="file" d={`M14 ${14 + i * 40} h14 l6 6 v20 h-20 z`} />
+            <text class="mono on" x="44" y={27 + i * 40}>{f}</text>
+            <text x="44" y={41 + i * 40}>{n}</text>
+          </g>
+        ))
+    }
+    {
+      kind === 'read' && (
+        <g>
+          <rect class="row" x="10" y="10" width="140" height="76" rx="6" />
+          {[0, 1, 2].map((i) => (
+            <rect class="line" x="22" y={26 + i * 16} width={[96, 74, 86][i]} height="6" rx="3" />
+          ))}
+          <path class="rule" d="M154 48 H176" />
+          <path class="rule" d="M170 42 L178 48 L170 54" />
+          <rect class="chip" x="182" y="38" width="30" height="20" rx="10" />
+          <text class="on" x="80" y="80" text-anchor="middle">a session, later</text>
+        </g>
+      )
+    }
+  </svg>
+  <h3>{title}</h3>
+  <div class="prose"><slot /></div>
+</li>
+
+<style>
+  .step {
+    counter-increment: step;
+    display: grid;
+    align-content: start;
+    gap: 0.75rem;
+    padding: 1.25rem;
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.75rem;
+    background: var(--sl-color-gray-6);
+  }
+  svg {
+    width: 100%;
+    height: auto;
+    max-height: 6rem;
+  }
+  h3 {
+    font-family: var(--eddy-display);
+    font-size: var(--sl-text-lg);
+    color: var(--sl-color-white);
+  }
+  h3::before {
+    content: counter(step) '  ';
+    color: var(--sl-color-accent);
+  }
+  .prose {
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-2);
+  }
+  .prose :global(p + p) {
+    margin-top: 0.5rem;
+  }
+  .prose :global(code) {
+    font-size: 0.85em;
+  }
+  text {
+    font-family: var(--sl-font);
+    font-size: 11px;
+    fill: var(--sl-color-gray-3);
+  }
+  .mono {
+    font-family: var(--sl-font-mono);
+    fill: var(--sl-color-white);
+  }
+  .big {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .accent {
+    fill: var(--sl-color-accent);
+  }
+  .on {
+    fill: var(--sl-color-white);
+  }
+  .chip {
+    fill: var(--sl-color-accent);
+  }
+  .chipt {
+    fill: var(--sl-color-black);
+    font-family: var(--sl-font-mono);
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .rule {
+    fill: none;
+    stroke: var(--sl-color-gray-3);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .row {
+    fill: var(--sl-color-gray-5);
+  }
+  .line {
+    fill: var(--sl-color-gray-3);
+  }
+  .file {
+    fill: none;
+    stroke: var(--sl-color-gray-3);
+    stroke-width: 1.5;
+    stroke-linejoin: round;
+  }
+</style>

@@ -1,0 +1,44 @@
+---
+title: How it fits
+description: eddy beside headwater, millpond, sluice and Flywheel.
+---
+
+import FamilyDiagram from '../../components/FamilyDiagramPlaceholder.astro';
+
+<FamilyDiagram highlight="eddy" />
+
+Some events outside a repository change its work: a release of
+something it depends on, a decision in a meeting. A program notices
+each one and hands it to millpond, the inbox. A session reads what needs
+reading, curation joins what it finds into items, and the work an item
+becomes lands through sluice. eddy is the program for meetings.
+
+| Tool | Does | With eddy |
+|---|---|---|
+| headwater | reports releases and advisories for what a repository declares | eddy's twin for releases: it stands alone the same way, and its Flywheel plugin feeds millpond the same way |
+| millpond | keeps the inbox | runs eddy's parts on a schedule, passes over a key it already holds, banks each transcript on the host, writes each capture, and marks it unread for a reader |
+| sluice | tests a change as merged and lands it | lands the work a meeting's signals become |
+| Flywheel | the umbrella | runs eddy's parts on a Flywheel host unchanged, against the inbox millpond kept |
+
+## Alone
+
+eddy stands alone, as headwater does. Its Claude Code plugin pulls a
+transcript into a session, and its herdr plugin shows the day's
+meetings. Neither needs millpond.
+
+## With millpond
+
+eddy's Flywheel plugin holds one part per meeting service. millpond
+runs a part as a command, hands it a raw directory and its last cursor,
+and lands the capture lines it prints. A part signs in to its service
+itself, once per host. millpond keeps the cursor and the run's status,
+so a fleet's doctor reads every part's health from one place.
+
+## What eddy never does
+
+- **Read a meeting into signals.** A reader session does that, through
+  millpond, which refuses an excerpt that does not appear word for word
+  in the transcript.
+- **Keep a list of what it reported.** millpond passes over a key it
+  already holds, so listing a window again is safe.
+- **Write records into an inbox.** It prints lines; millpond writes.

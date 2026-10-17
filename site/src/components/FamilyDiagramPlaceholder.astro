@@ -1,0 +1,108 @@
+---
+// PLACEHOLDER for the family diagram. @agentplot/site-theme draws the
+// animated family diagram, with a `highlight` prop; until it lands this
+// static stand-in names the family and marks eddy. Replace this component
+// with the theme's when it is published, keeping highlight="eddy".
+interface Props {
+  highlight: 'headwater' | 'eddy' | 'millpond' | 'sluice' | 'flywheel';
+}
+const { highlight } = Astro.props;
+const sources = [
+  { id: 'headwater', name: 'headwater', does: 'releases' },
+  { id: 'eddy', name: 'eddy', does: 'meetings' },
+];
+---
+
+<figure class="family not-content" data-placeholder="family-diagram">
+  <p class="note">Placeholder: the family diagram arrives with <code>@agentplot/site-theme</code>.</p>
+  <div class:list={['umbrella', { on: highlight === 'flywheel' }]}>
+    <span class="label">Flywheel · the umbrella</span>
+    <div class="row">
+      <div class="col">
+        {
+          sources.map((s) => (
+            <div class:list={['tool', { on: highlight === s.id }]}>
+              <strong>{s.name}</strong>
+              <span>{s.does}</span>
+            </div>
+          ))
+        }
+      </div>
+      <span class="arrow" aria-hidden="true">→</span>
+      <div class:list={['tool', { on: highlight === 'millpond' }]}>
+        <strong>millpond</strong>
+        <span>the inbox</span>
+      </div>
+      <span class="arrow" aria-hidden="true">→</span>
+      <div class:list={['tool', { on: highlight === 'sluice' }]}>
+        <strong>sluice</strong>
+        <span>landing</span>
+      </div>
+    </div>
+  </div>
+</figure>
+
+<style>
+  .family {
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 1px dashed var(--sl-color-gray-4);
+    border-radius: 0.75rem;
+  }
+  .note {
+    margin: 0 0 1rem;
+    font-size: var(--sl-text-xs);
+    color: var(--sl-color-gray-3);
+  }
+  .umbrella {
+    padding: 1rem;
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.75rem;
+    background: var(--sl-color-gray-6);
+  }
+  .label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-size: var(--sl-text-xs);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--sl-color-gray-3);
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .col {
+    display: grid;
+    gap: 0.5rem;
+  }
+  .tool {
+    display: grid;
+    padding: 0.5rem 0.875rem;
+    min-width: 8rem;
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.5rem;
+    background: var(--sl-color-black);
+  }
+  .tool strong {
+    font-family: var(--sl-font-mono);
+    color: var(--sl-color-white);
+  }
+  .tool span {
+    font-size: var(--sl-text-xs);
+    color: var(--sl-color-gray-3);
+  }
+  .tool.on {
+    border-color: var(--sl-color-accent);
+    box-shadow: 0 0 0 2px var(--sl-color-accent-low);
+  }
+  .tool.on strong {
+    color: var(--sl-color-accent);
+  }
+  .arrow {
+    color: var(--sl-color-gray-3);
+  }
+</style>

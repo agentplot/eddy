@@ -1,0 +1,96 @@
+/* eddy on Starlight: the family's ink, paper and type (sluice's, until
+   @agentplot/site-theme sets them), and eddy's violet. The accent is the
+   one variable --eddy-accent, with a value per theme; Starlight's three
+   accent shades and the diagrams' colors derive from it. Starlight's dark
+   theme is :root, its light one [data-theme='light']. */
+@import '@fontsource/space-grotesk/500.css';
+@import '@fontsource/space-grotesk/700.css';
+@import '@fontsource/ibm-plex-sans/400.css';
+@import '@fontsource/ibm-plex-sans/400-italic.css';
+@import '@fontsource/ibm-plex-sans/600.css';
+@import '@fontsource/ibm-plex-mono/400.css';
+@import '@fontsource/ibm-plex-mono/600.css';
+
+:root {
+  --eddy-accent: #a68cff;
+
+  --sl-font: 'IBM Plex Sans', system-ui, sans-serif;
+  --sl-font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --eddy-display: 'Space Grotesk', var(--sl-font);
+
+  --sl-color-accent-low: color-mix(in oklab, var(--eddy-accent) 24%, #0e1116);
+  --sl-color-accent: var(--eddy-accent);
+  --sl-color-accent-high: color-mix(in oklab, var(--eddy-accent) 38%, #ffffff);
+  --sl-color-white: #f2f1ec;
+  --sl-color-gray-1: #e6e5e0;
+  --sl-color-gray-2: #c9cbd2;
+  --sl-color-gray-3: #8c92a0;
+  --sl-color-gray-4: #5d6370;
+  --sl-color-gray-5: #2a2f38;
+  --sl-color-gray-6: #161a21;
+  --sl-color-black: #0e1116;
+}
+
+:root[data-theme='light'] {
+  --eddy-accent: #6b4fd8;
+
+  --sl-color-accent-low: color-mix(in oklab, var(--eddy-accent) 18%, #ffffff);
+  --sl-color-accent-high: color-mix(in oklab, var(--eddy-accent) 60%, #0e1116);
+  --sl-color-white: #0e1116;
+  --sl-color-gray-1: #1b1f27;
+  --sl-color-gray-2: #2f343d;
+  --sl-color-gray-3: #5d6370;
+  --sl-color-gray-4: #8c92a0;
+  --sl-color-gray-5: #c9c7bf;
+  --sl-color-gray-6: #e9e7e0;
+  --sl-color-gray-7: #f2f1ec;
+  --sl-color-black: #f7f6f2;
+}
+
+.site-title,
+.sl-markdown-content :is(h1, h2, h3, h4),
+h1#_top,
+.hero h1 {
+  font-family: var(--eddy-display);
+  letter-spacing: -0.015em;
+}
+
+.site-title {
+  font-weight: 700;
+  font-size: var(--sl-text-xl);
+}
+
+/* Three cards side by side where the page has room for them. */
+@media (min-width: 60rem) {
+  .three .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* The diagrams' colors (docs/diagrams/diagrams.py --scoped), from the
+   page's, so they follow the theme toggle. */
+.eddy-diagram {
+  --bg: #12161c;
+  --panel: #1b2029;
+  --fg: var(--sl-color-white);
+  --muted: #9a9fab;
+  --rule: #2f3540;
+  --soft: #20252e;
+  --accent: var(--eddy-accent);
+  --accent-soft: color-mix(in srgb, var(--eddy-accent) 22%, #1b2029);
+  --ok: #45c27a;
+  --bad: #f08a7e;
+  --ink: #12161c;
+}
+
+:root[data-theme='light'] .eddy-diagram {
+  --bg: #ebe9e2;
+  --panel: #fbfaf7;
+  --muted: #5d6370;
+  --rule: #d0cdc3;
+  --soft: #e0ddd4;
+  --accent-soft: color-mix(in srgb, var(--eddy-accent) 16%, #fbfaf7);
+  --ok: #1f8a4c;
+  --bad: #c0392b;
+  --ink: #fbfaf7;
+}

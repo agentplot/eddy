@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520" role="img" aria-labelledby="ed-contribute-w-ttl ed-contribute-w-dsc">
+<title id="ed-contribute-w-ttl">Anyone can add a meeting service: a part counts once it passes the meeting checks</title>
+<desc id="ed-contribute-w-dsc">Three parts wait to be checked: eddy's own webex part, your plugin's part, and another plugin's part. The meeting checks in the conformance pack test each in turn: its key is meeting slash service slash meeting id; event_at is when the meeting started; the raw files are the transcript as served plus one line per turn; it skips a meeting too short to matter; it carries no excerpt. webex and your part pass and join the plugin index beside eddy's wispr. The other part stamps event_at with the capture time, fails, and is not listed. For the long tail, a generic MCP part lists meetings from any MCP endpoint that serves transcripts, and millpond's folder drop takes any file dropped in a folder as one capture.</desc>
+<style>:root{--bg:#ebe9e2;--panel:#fbfaf7;--fg:#0e1116;--muted:#5d6370;--rule:#d0cdc3;--soft:#e0ddd4;--accent:#6b4fd8;--accent-soft:#e4ddfb;--ok:#1f8a4c;--bad:#c0392b;--ink:#fbfaf7}@media (prefers-color-scheme:dark){:root{--bg:#14181f;--panel:#1b2029;--fg:#f2f1ec;--muted:#9a9fab;--rule:#2f3540;--soft:#232933;--accent:#a68cff;--accent-soft:#2c2547;--ok:#45c27a;--bad:#f08a7e;--ink:#14181f}}
+text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:var(--fg)}
+.ed-contribute-w-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.ed-contribute-w-t{fill:var(--fg)} .ed-contribute-w-m{fill:var(--muted)} .ed-contribute-w-a{fill:var(--accent)} .ed-contribute-w-ok{fill:var(--ok)} .ed-contribute-w-bad{fill:var(--bad)} .ed-contribute-w-ink{fill:var(--ink)}
+.ed-contribute-w-b{font-weight:600} .ed-contribute-w-h{font-size:17px;font-weight:700}
+.ed-contribute-w-hd{font-size:11px;letter-spacing:.07em;fill:var(--muted);font-weight:600}
+.ed-contribute-w-sm{font-size:13px} .ed-contribute-w-xs{font-size:11.5px} .ed-contribute-w-xxs{font-size:10.5px} .ed-contribute-w-f12{font-size:12px}
+.ed-contribute-w-bg{fill:var(--bg)} .ed-contribute-w-soft{fill:var(--soft)}
+.ed-contribute-w-panel{fill:var(--panel);stroke:var(--rule);stroke-width:1.2}
+.ed-contribute-w-own{fill:var(--panel);stroke:var(--accent);stroke-width:1.5}
+.ed-contribute-w-mchip{fill:var(--soft);stroke:var(--rule);stroke-width:1}
+.ed-contribute-w-achip{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.2}
+.ed-contribute-w-chip{fill:var(--accent)}
+.ed-contribute-w-hl{fill:none;stroke:var(--accent);stroke-width:2}
+.ed-contribute-w-hlbar{fill:var(--accent-soft)}
+.ed-contribute-w-edge{fill:none;stroke:var(--muted);stroke-width:1.5}
+.ed-contribute-w-aedge{fill:none;stroke:var(--accent);stroke-width:2}
+.ed-contribute-w-dash{stroke-dasharray:4 4}
+.ed-contribute-w-slot{fill:none;stroke:var(--rule);stroke-width:1.5;stroke-dasharray:5 4}
+.ed-contribute-w-tick{fill:none;stroke:var(--ok);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.ed-contribute-w-cross{fill:none;stroke:var(--bad);stroke-width:2.2;stroke-linecap:round}
+.ed-contribute-w-ring{fill:var(--panel);stroke:var(--rule);stroke-width:1.2}
+.ed-contribute-w-file{fill:var(--panel);stroke:var(--muted);stroke-width:1}
+.ed-contribute-w-badge{fill:var(--accent)} .ed-contribute-w-badget{fill:var(--ink);font-size:12px;font-weight:700}
+.ed-contribute-w-ah{fill:var(--accent)}
+.ed-contribute-w-pulse{transform-box:fill-box;transform-origin:center}
+.ed-contribute-w-draw{stroke-dasharray:100}
+.ed-contribute-w-ghost{opacity:.5}
+@media (prefers-reduced-motion:reduce){*{animation-play-state:paused!important;animation-delay:-16.2s!important}.ed-contribute-w-cap{animation:none!important;opacity:1!important}}@keyframes ed-contribute-w-k-s1{0%{opacity:0} 26.2%{opacity:0} 27%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-contribute-w-s1{animation:ed-contribute-w-k-s1 18s linear infinite}@keyframes ed-contribute-w-k-s2{0%{opacity:0} 54.2%{opacity:0} 55%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-contribute-w-s2{animation:ed-contribute-w-k-s2 18s linear infinite}@keyframes ed-contribute-w-k-s3{0%{opacity:0} 71.2%{opacity:0} 72%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-contribute-w-s3{animation:ed-contribute-w-k-s3 18s linear infinite}@keyframes ed-contribute-w-k-c4{0%{transform:translate(0px,0px);opacity:1} 3%{transform:translate(0px,0px);opacity:1} 7%{transform:translate(315px,4px);opacity:1} 24%{transform:translate(315px,4px);opacity:1} 28%{transform:translate(640px,42px);opacity:1} 28.6%{transform:translate(640px,42px);opacity:0} 99%{transform:translate(640px,42px);opacity:0} 100%{transform:translate(0px,0px);opacity:1}}.ed-contribute-w-c4{animation:ed-contribute-w-k-c4 18s linear infinite}@keyframes ed-contribute-w-k-s5{0%{opacity:0} 8.2%{opacity:0} 9%{opacity:1} 27%{opacity:1} 27.8%{opacity:0} 100%{opacity:0}}.ed-contribute-w-s5{animation:ed-contribute-w-k-s5 18s linear infinite}@keyframes ed-contribute-w-k-s6{0%{opacity:0} 11.2%{opacity:0} 12%{opacity:1} 27%{opacity:1} 27.8%{opacity:0} 100%{opacity:0}}.ed-contribute-w-s6{animation:ed-contribute-w-k-s6 18s linear infinite}@keyframes ed-contribute-w-k-s7{0%{opacity:0} 14.2%{opacity:0} 15%{opacity:1} 27%{opacity:1} 27.8%{opacity:0} 100%{opacity:0}}.ed-contribute-w-s7{animation:ed-contribute-w-k-s7 18s linear infinite}@keyframes ed-contribute-w-k-s8{0%{opacity:0} 17.2%{opacity:0} 18%{opacity:1} 27%{opacity:1} 27.8%{opacity:0} 100%{opacity:0}}.ed-contribute-w-s8{animation:ed-contribute-w-k-s8 18s linear infinite}@keyframes ed-contribute-w-k-s9{0%{opacity:0} 20.2%{opacity:0} 21%{opacity:1} 27%{opacity:1} 27.8%{opacity:0} 100%{opacity:0}}.ed-contribute-w-s9{animation:ed-contribute-w-k-s9 18s linear infinite}@keyframes ed-contribute-w-k-c10{0%{transform:translate(0px,0px);opacity:1} 31%{transform:translate(0px,0px);opacity:1} 35%{transform:translate(315px,-60px);opacity:1} 52%{transform:translate(315px,-60px);opacity:1} 56%{transform:translate(640px,24px);opacity:1} 56.6%{transform:translate(640px,24px);opacity:0} 99%{transform:translate(640px,24px);opacity:0} 100%{transform:translate(0px,0px);opacity:1}}.ed-contribute-w-c10{animation:ed-contribute-w-k-c10 18s linear infinite}@keyframes ed-contribute-w-k-s11{0%{opacity:0} 36.2%{opacity:0} 37%{opacity:1} 55%{opacity:1} 55.8%{opacity:0} 100%{opacity:0}}.ed-contribute-w-s11{animation:ed-contribute-w-k-s11 18s linear infinite}@keyframes ed-contribute-w-k-s12{0%{opacity:0} 39.2%{opacity:0} 40%{opacity:1} 55%{opacity:1} 55.8%{opacity:0} 100%{opacity:0}}.ed-contribute-w-s12{animation:ed-contribute-w-k-s12 18s linear infinite}@keyframes ed-contribute-w-k-s13{0%{opacity:0} 42.2%{opacity:0} 43%{opacity:1} 55%{opacity:1} 55.8%{opacity:0} 100%{opacity:0}}.ed-contribute-w-s13{animation:ed-contribute-w-k-s13 18s linear infinite}@keyframes ed-contribute-w-k-s14{0%{opacity:0} 45.2%{opacity:0} 46%{opacity:1} 55%{opacity:1} 55.8%{opacity:0} 100%{opacity:0}}.ed-contribute-w-s14{animation:ed-contribute-w-k-s14 18s linear infinite}@keyframes ed-contribute-w-k-s15{0%{opacity:0} 48.2%{opacity:0} 49%{opacity:1} 55%{opacity:1} 55.8%{opacity:0} 100%{opacity:0}}.ed-contribute-w-s15{animation:ed-contribute-w-k-s15 18s linear infinite}@keyframes ed-contribute-w-k-c16{0%{transform:translate(0px,0px);opacity:1} 57%{transform:translate(0px,0px);opacity:1} 61%{transform:translate(315px,-124px);opacity:1} 69%{transform:translate(315px,-124px);opacity:1} 73%{transform:translate(0px,86px);opacity:1} 96%{transform:translate(0px,86px);opacity:1} 98%{transform:translate(0px,86px);opacity:0} 99%{transform:translate(0px,0px);opacity:0} 100%{transform:translate(0px,0px);opacity:1}}.ed-contribute-w-c16{animation:ed-contribute-w-k-c16 18s linear infinite}@keyframes ed-contribute-w-k-s17{0%{opacity:0} 62.2%{opacity:0} 63%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-contribute-w-s17{animation:ed-contribute-w-k-s17 18s linear infinite}@keyframes ed-contribute-w-k-s18{0%{opacity:0} 65.2%{opacity:0} 66%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-contribute-w-s18{animation:ed-contribute-w-k-s18 18s linear infinite}@keyframes ed-contribute-w-k-s19{0%{opacity:0} 71.2%{opacity:0} 72%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-contribute-w-s19{animation:ed-contribute-w-k-s19 18s linear infinite}@keyframes ed-contribute-w-k-s20{0%{opacity:0} 75.2%{opacity:0} 76%{opacity:1} 94%{opacity:1} 94.8%{opacity:0} 100%{opacity:0}}.ed-contribute-w-s20{animation:ed-contribute-w-k-s20 18s linear infinite}@keyframes ed-contribute-w-k-s21{0%{opacity:0} 75.2%{opacity:0} 76%{opacity:1} 94%{opacity:1} 94.8%{opacity:0} 100%{opacity:0}}.ed-contribute-w-s21{animation:ed-contribute-w-k-s21 18s linear infinite}@keyframes ed-contribute-w-k-f22{0%{transform:translate(0px,-30px);opacity:0} 79.2%{transform:translate(0px,-30px);opacity:0} 80%{transform:translate(0px,-30px);opacity:1} 80%{transform:translate(0px,-30px);opacity:1} 84%{transform:translate(0px,0px);opacity:1} 94%{transform:translate(0px,0px);opacity:1} 94.8%{transform:translate(0px,0px);opacity:0} 100%{transform:translate(0px,0px);opacity:0}}.ed-contribute-w-f22{animation:ed-contribute-w-k-f22 18s linear infinite}@keyframes ed-contribute-w-k-cap23{0%{opacity:0.35} 1.2%{opacity:0.35} 2%{opacity:1} 30%{opacity:1} 30.8%{opacity:0.35} 100%{opacity:0.35}}.ed-contribute-w-cap23{animation:ed-contribute-w-k-cap23 18s linear infinite}@keyframes ed-contribute-w-k-cap24{0%{opacity:0.35} 29.2%{opacity:0.35} 30%{opacity:1} 56%{opacity:1} 56.8%{opacity:0.35} 100%{opacity:0.35}}.ed-contribute-w-cap24{animation:ed-contribute-w-k-cap24 18s linear infinite}@keyframes ed-contribute-w-k-cap25{0%{opacity:0.35} 55.2%{opacity:0.35} 56%{opacity:1} 76%{opacity:1} 76.8%{opacity:0.35} 100%{opacity:0.35}}.ed-contribute-w-cap25{animation:ed-contribute-w-k-cap25 18s linear infinite}@keyframes ed-contribute-w-k-cap26{0%{opacity:0.35} 75.2%{opacity:0.35} 76%{opacity:1} 94%{opacity:1} 94.8%{opacity:0.35} 100%{opacity:0.35}}.ed-contribute-w-cap26{animation:ed-contribute-w-k-cap26 18s linear infinite}</style>
+<defs><marker id="ed-contribute-w-ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="ed-contribute-w-ah" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect class="ed-contribute-w-bg" width="900" height="520" rx="10"/>
+<text class="ed-contribute-w-h" x="20" y="32">Anyone can add a service</text>
+<text class="ed-contribute-w-m ed-contribute-w-sm" x="236" y="32">a part counts once it passes the meeting checks</text>
+<text class="ed-contribute-w-hd" x="20" y="72">PARTS</text>
+<rect class="ed-contribute-w-panel" x="270" y="52" width="340" height="296" rx="6"/>
+<text class="ed-contribute-w-hd" x="284" y="72">THE MEETING CHECKS · CONFORMANCE PACK</text>
+<rect class="ed-contribute-w-slot" x="290" y="82" width="300" height="62" rx="8"/>
+<circle class="ed-contribute-w-ring" cx="298" cy="168" r="9"/>
+<text class="ed-contribute-w-xs" x="316" y="172">key is meeting/&lt;service&gt;/&lt;meeting id&gt;</text>
+<circle class="ed-contribute-w-ring" cx="298" cy="202" r="9"/>
+<text class="ed-contribute-w-xs" x="316" y="206">event_at is when the meeting started</text>
+<circle class="ed-contribute-w-ring" cx="298" cy="236" r="9"/>
+<text class="ed-contribute-w-xs" x="316" y="240">raw: as served, plus one line per turn</text>
+<circle class="ed-contribute-w-ring" cx="298" cy="270" r="9"/>
+<text class="ed-contribute-w-xs" x="316" y="274">skips a meeting too short to matter</text>
+<circle class="ed-contribute-w-ring" cx="298" cy="304" r="9"/>
+<text class="ed-contribute-w-xs" x="316" y="308">carries no excerpt</text>
+<rect class="ed-contribute-w-panel" x="650" y="52" width="230" height="296" rx="6"/>
+<text class="ed-contribute-w-hd" x="664" y="72">THE PLUGIN INDEX</text>
+<rect class="ed-contribute-w-panel" x="664" y="86" width="202" height="38" rx="5"/>
+<text class="ed-contribute-w-mono ed-contribute-w-xs ed-contribute-w-b" x="678" y="110">wispr</text>
+<text class="ed-contribute-w-m ed-contribute-w-xxs" x="854" y="110" text-anchor="end">eddy's</text>
+<g class="ed-contribute-w-s1">
+<rect class="ed-contribute-w-panel" x="664" y="132" width="202" height="38" rx="5"/>
+<text class="ed-contribute-w-mono ed-contribute-w-xs ed-contribute-w-b" x="678" y="156">webex</text>
+<text class="ed-contribute-w-m ed-contribute-w-xxs" x="854" y="156" text-anchor="end">eddy's</text>
+</g>
+<g class="ed-contribute-w-s2">
+<rect class="ed-contribute-w-panel" x="664" y="178" width="202" height="38" rx="5"/>
+<text class="ed-contribute-w-mono ed-contribute-w-xs ed-contribute-w-b" x="678" y="202">your-service</text>
+<text class="ed-contribute-w-m ed-contribute-w-xxs" x="854" y="202" text-anchor="end">yours</text>
+</g>
+<text class="ed-contribute-w-m ed-contribute-w-xxs" x="664" y="330">listed beside eddy's own</text>
+<rect class="ed-contribute-w-slot" x="20" y="82" width="210" height="54" rx="6"/>
+<text class="ed-contribute-w-mono ed-contribute-w-sm ed-contribute-w-m ed-contribute-w-ghost" x="34" y="105">webex</text>
+<rect class="ed-contribute-w-slot" x="20" y="146" width="210" height="54" rx="6"/>
+<text class="ed-contribute-w-mono ed-contribute-w-sm ed-contribute-w-m ed-contribute-w-ghost" x="34" y="169">your-service</text>
+<rect class="ed-contribute-w-slot" x="20" y="210" width="210" height="54" rx="6"/>
+<text class="ed-contribute-w-mono ed-contribute-w-sm ed-contribute-w-m ed-contribute-w-ghost" x="34" y="233">another-part</text>
+<text class="ed-contribute-w-hd ed-contribute-w-s3" x="20" y="286">NOT LISTED</text>
+<g class="ed-contribute-w-c4">
+<rect class="ed-contribute-w-panel" x="20" y="82" width="210" height="54" rx="6"/>
+<text class="ed-contribute-w-mono ed-contribute-w-sm ed-contribute-w-b" x="34" y="105">webex</text>
+<text class="ed-contribute-w-m ed-contribute-w-xs" x="34" y="123">eddy's · recorded responses</text>
+</g>
+<path class="ed-contribute-w-tick ed-contribute-w-s5" d="M294,168 l3,3.2 l5.6,-6.4"/>
+<path class="ed-contribute-w-tick ed-contribute-w-s6" d="M294,202 l3,3.2 l5.6,-6.4"/>
+<path class="ed-contribute-w-tick ed-contribute-w-s7" d="M294,236 l3,3.2 l5.6,-6.4"/>
+<path class="ed-contribute-w-tick ed-contribute-w-s8" d="M294,270 l3,3.2 l5.6,-6.4"/>
+<path class="ed-contribute-w-tick ed-contribute-w-s9" d="M294,304 l3,3.2 l5.6,-6.4"/>
+<g class="ed-contribute-w-c10">
+<rect class="ed-contribute-w-achip" x="20" y="146" width="210" height="54" rx="6"/>
+<text class="ed-contribute-w-mono ed-contribute-w-sm ed-contribute-w-b" x="34" y="169">your-service</text>
+<text class="ed-contribute-w-m ed-contribute-w-xs" x="34" y="187">your plugin</text>
+</g>
+<path class="ed-contribute-w-tick ed-contribute-w-s11" d="M294,168 l3,3.2 l5.6,-6.4"/>
+<path class="ed-contribute-w-tick ed-contribute-w-s12" d="M294,202 l3,3.2 l5.6,-6.4"/>
+<path class="ed-contribute-w-tick ed-contribute-w-s13" d="M294,236 l3,3.2 l5.6,-6.4"/>
+<path class="ed-contribute-w-tick ed-contribute-w-s14" d="M294,270 l3,3.2 l5.6,-6.4"/>
+<path class="ed-contribute-w-tick ed-contribute-w-s15" d="M294,304 l3,3.2 l5.6,-6.4"/>
+<g class="ed-contribute-w-c16">
+<rect class="ed-contribute-w-panel" x="20" y="210" width="210" height="54" rx="6"/>
+<text class="ed-contribute-w-mono ed-contribute-w-sm ed-contribute-w-b" x="34" y="233">another-part</text>
+<text class="ed-contribute-w-m ed-contribute-w-xs" x="34" y="251">another plugin</text>
+</g>
+<path class="ed-contribute-w-tick ed-contribute-w-s17" d="M294,168 l3,3.2 l5.6,-6.4"/>
+<path class="ed-contribute-w-cross ed-contribute-w-s18" d="M294.5,198.5 l7,7 m0,-7 l-7,7"/>
+<text class="ed-contribute-w-bad ed-contribute-w-xxs ed-contribute-w-s19" x="20" y="368">event_at was the capture time</text>
+<rect class="ed-contribute-w-soft" x="20" y="382" width="860" height="74" rx="8"/>
+<text class="ed-contribute-w-hd" x="34" y="402">THE LONG TAIL</text>
+<rect class="ed-contribute-w-panel" x="34" y="410" width="406" height="38" rx="5"/>
+<rect class="ed-contribute-w-hl ed-contribute-w-s20" x="34" y="410" width="406" height="38" rx="5"/>
+<text class="ed-contribute-w-mono ed-contribute-w-xs ed-contribute-w-b" x="46" y="425">generic MCP part</text>
+<text class="ed-contribute-w-m ed-contribute-w-xxs" x="46" y="441">lists meetings from any MCP endpoint that serves transcripts</text>
+<rect class="ed-contribute-w-panel" x="460" y="410" width="406" height="38" rx="5"/>
+<rect class="ed-contribute-w-hl ed-contribute-w-s21" x="460" y="410" width="406" height="38" rx="5"/>
+<text class="ed-contribute-w-mono ed-contribute-w-xs ed-contribute-w-b" x="472" y="425">folder drop · millpond's</text>
+<text class="ed-contribute-w-m ed-contribute-w-xxs" x="472" y="441">a file dropped in a folder is one capture: folder/&lt;name&gt;/&lt;sha256&gt;</text>
+<g class="ed-contribute-w-f22">
+<path class="ed-contribute-w-file" d="M850,414 h12.6 l5.4,5.4 v16.2 h-18 z"/>
+</g>
+<g class="ed-contribute-w-cap ed-contribute-w-cap23">
+<circle class="ed-contribute-w-badge" cx="32" cy="490" r="11"/>
+<text class="ed-contribute-w-badget" x="32" y="494" text-anchor="middle">1</text>
+<text class="ed-contribute-w-t ed-contribute-w-sm" x="50" y="486">eddy's own parts pass</text>
+<text class="ed-contribute-w-t ed-contribute-w-sm" x="50" y="503">on recorded responses.</text>
+</g>
+<g class="ed-contribute-w-cap ed-contribute-w-cap24">
+<circle class="ed-contribute-w-badge" cx="252" cy="490" r="11"/>
+<text class="ed-contribute-w-badget" x="252" y="494" text-anchor="middle">2</text>
+<text class="ed-contribute-w-t ed-contribute-w-sm" x="270" y="486">Your plugin counts once</text>
+<text class="ed-contribute-w-t ed-contribute-w-sm" x="270" y="503">it passes the same checks.</text>
+</g>
+<g class="ed-contribute-w-cap ed-contribute-w-cap25">
+<circle class="ed-contribute-w-badge" cx="472" cy="490" r="11"/>
+<text class="ed-contribute-w-badget" x="472" y="494" text-anchor="middle">3</text>
+<text class="ed-contribute-w-t ed-contribute-w-sm" x="490" y="486">A part that fails a check</text>
+<text class="ed-contribute-w-t ed-contribute-w-sm" x="490" y="503">is not listed.</text>
+</g>
+<g class="ed-contribute-w-cap ed-contribute-w-cap26">
+<circle class="ed-contribute-w-badge" cx="692" cy="490" r="11"/>
+<text class="ed-contribute-w-badget" x="692" y="494" text-anchor="middle">4</text>
+<text class="ed-contribute-w-t ed-contribute-w-sm" x="710" y="486">A generic MCP part and the</text>
+<text class="ed-contribute-w-t ed-contribute-w-sm" x="710" y="503">folder drop take the rest.</text>
+</g>
+</svg>

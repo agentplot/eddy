@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" role="img" aria-labelledby="ed-eddy-w-ttl ed-eddy-w-dsc">
+<title id="ed-eddy-w-ttl">eddy: a program lists meetings, a session reads them later</title>
+<desc id="ed-eddy-w-dsc">Three meeting services, Wispr Flow, Webex and Microsoft Teams, hold recorded meetings. eddy has one part per service. Each part lists its service's meetings and fetches them while the count of model calls stays at zero, and a two-minute check-in is skipped as too short to matter. eddy keeps each other meeting under its key, meeting slash service slash the meeting's id, with the transcript as the service served it and a plain copy with one line per turn. Later, and outside eddy, a Claude session reads one transcript and writes signals through millpond.</desc>
+<style>:root{--bg:#ebe9e2;--panel:#fbfaf7;--fg:#0e1116;--muted:#5d6370;--rule:#d0cdc3;--soft:#e0ddd4;--accent:#6b4fd8;--accent-soft:#e4ddfb;--ok:#1f8a4c;--bad:#c0392b;--ink:#fbfaf7}@media (prefers-color-scheme:dark){:root{--bg:#14181f;--panel:#1b2029;--fg:#f2f1ec;--muted:#9a9fab;--rule:#2f3540;--soft:#232933;--accent:#a68cff;--accent-soft:#2c2547;--ok:#45c27a;--bad:#f08a7e;--ink:#14181f}}
+text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:var(--fg)}
+.ed-eddy-w-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.ed-eddy-w-t{fill:var(--fg)} .ed-eddy-w-m{fill:var(--muted)} .ed-eddy-w-a{fill:var(--accent)} .ed-eddy-w-ok{fill:var(--ok)} .ed-eddy-w-bad{fill:var(--bad)} .ed-eddy-w-ink{fill:var(--ink)}
+.ed-eddy-w-b{font-weight:600} .ed-eddy-w-h{font-size:17px;font-weight:700}
+.ed-eddy-w-hd{font-size:11px;letter-spacing:.07em;fill:var(--muted);font-weight:600}
+.ed-eddy-w-sm{font-size:13px} .ed-eddy-w-xs{font-size:11.5px} .ed-eddy-w-xxs{font-size:10.5px} .ed-eddy-w-f12{font-size:12px}
+.ed-eddy-w-bg{fill:var(--bg)} .ed-eddy-w-soft{fill:var(--soft)}
+.ed-eddy-w-panel{fill:var(--panel);stroke:var(--rule);stroke-width:1.2}
+.ed-eddy-w-own{fill:var(--panel);stroke:var(--accent);stroke-width:1.5}
+.ed-eddy-w-mchip{fill:var(--soft);stroke:var(--rule);stroke-width:1}
+.ed-eddy-w-achip{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.2}
+.ed-eddy-w-chip{fill:var(--accent)}
+.ed-eddy-w-hl{fill:none;stroke:var(--accent);stroke-width:2}
+.ed-eddy-w-hlbar{fill:var(--accent-soft)}
+.ed-eddy-w-edge{fill:none;stroke:var(--muted);stroke-width:1.5}
+.ed-eddy-w-aedge{fill:none;stroke:var(--accent);stroke-width:2}
+.ed-eddy-w-dash{stroke-dasharray:4 4}
+.ed-eddy-w-slot{fill:none;stroke:var(--rule);stroke-width:1.5;stroke-dasharray:5 4}
+.ed-eddy-w-tick{fill:none;stroke:var(--ok);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.ed-eddy-w-cross{fill:none;stroke:var(--bad);stroke-width:2.2;stroke-linecap:round}
+.ed-eddy-w-ring{fill:var(--panel);stroke:var(--rule);stroke-width:1.2}
+.ed-eddy-w-file{fill:var(--panel);stroke:var(--muted);stroke-width:1}
+.ed-eddy-w-badge{fill:var(--accent)} .ed-eddy-w-badget{fill:var(--ink);font-size:12px;font-weight:700}
+.ed-eddy-w-ah{fill:var(--accent)}
+.ed-eddy-w-pulse{transform-box:fill-box;transform-origin:center}
+.ed-eddy-w-draw{stroke-dasharray:100}
+.ed-eddy-w-ghost{opacity:.5}
+@media (prefers-reduced-motion:reduce){*{animation-play-state:paused!important;animation-delay:-17.2s!important}.ed-eddy-w-cap{animation:none!important;opacity:1!important}}@keyframes ed-eddy-w-k-s1{0%{opacity:0} 2.2%{opacity:0} 3%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s1{animation:ed-eddy-w-k-s1 20s linear infinite}@keyframes ed-eddy-w-k-s2{0%{opacity:0} 5.2%{opacity:0} 6%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s2{animation:ed-eddy-w-k-s2 20s linear infinite}@keyframes ed-eddy-w-k-s3{0%{opacity:0} 8.2%{opacity:0} 9%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s3{animation:ed-eddy-w-k-s3 20s linear infinite}@keyframes ed-eddy-w-k-s4{0%{opacity:0} 11.2%{opacity:0} 12%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s4{animation:ed-eddy-w-k-s4 20s linear infinite}@keyframes ed-eddy-w-k-p5{0%{transform:scale(1)} 17%{transform:scale(1)} 18.5%{transform:scale(1.5)} 20%{transform:scale(1)} 23%{transform:scale(1)} 24.5%{transform:scale(1.5)} 26%{transform:scale(1)} 29%{transform:scale(1)} 30.5%{transform:scale(1.5)} 32%{transform:scale(1)} 35%{transform:scale(1)} 36.5%{transform:scale(1.5)} 38%{transform:scale(1)} 41%{transform:scale(1)} 42.5%{transform:scale(1.5)} 44%{transform:scale(1)} 100%{transform:scale(1)}}.ed-eddy-w-p5{animation:ed-eddy-w-k-p5 20s linear infinite}@keyframes ed-eddy-w-k-s6{0%{opacity:0} 18.2%{opacity:0} 19%{opacity:1} 25%{opacity:1} 25.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s6{animation:ed-eddy-w-k-s6 20s linear infinite}@keyframes ed-eddy-w-k-s7{0%{opacity:0} 24.2%{opacity:0} 25%{opacity:1} 28%{opacity:1} 28.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s7{animation:ed-eddy-w-k-s7 20s linear infinite}@keyframes ed-eddy-w-k-s8{0%{opacity:0} 27.2%{opacity:0} 28%{opacity:1} 31%{opacity:1} 31.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s8{animation:ed-eddy-w-k-s8 20s linear infinite}@keyframes ed-eddy-w-k-s9{0%{opacity:0} 30.2%{opacity:0} 31%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s9{animation:ed-eddy-w-k-s9 20s linear infinite}@keyframes ed-eddy-w-k-v10{0%{transform:translate(0px,0px);opacity:0} 15.2%{transform:translate(0px,0px);opacity:0} 16%{transform:translate(0px,0px);opacity:1} 16%{transform:translate(0px,0px);opacity:1} 20%{transform:translate(218px,-3px);opacity:1} 21%{transform:translate(218px,-3px);opacity:1} 21.8%{transform:translate(218px,-3px);opacity:0} 100%{transform:translate(218px,-3px);opacity:0}}.ed-eddy-w-v10{animation:ed-eddy-w-k-v10 20s linear infinite}@keyframes ed-eddy-w-k-v11{0%{transform:translate(0px,0px);opacity:0} 18.2%{transform:translate(0px,0px);opacity:0} 19%{transform:translate(0px,0px);opacity:1} 19%{transform:translate(0px,0px);opacity:1} 23%{transform:translate(218px,4px);opacity:1} 30%{transform:translate(218px,4px);opacity:1} 30.8%{transform:translate(218px,4px);opacity:0} 100%{transform:translate(218px,4px);opacity:0}}.ed-eddy-w-v11{animation:ed-eddy-w-k-v11 20s linear infinite}@keyframes ed-eddy-w-k-v12{0%{transform:translate(0px,0px);opacity:0} 21.2%{transform:translate(0px,0px);opacity:0} 22%{transform:translate(0px,0px);opacity:1} 22%{transform:translate(0px,0px);opacity:1} 26%{transform:translate(218px,-3px);opacity:1} 27%{transform:translate(218px,-3px);opacity:1} 27.8%{transform:translate(218px,-3px);opacity:0} 100%{transform:translate(218px,-3px);opacity:0}}.ed-eddy-w-v12{animation:ed-eddy-w-k-v12 20s linear infinite}@keyframes ed-eddy-w-k-v13{0%{transform:translate(0px,0px);opacity:0} 24.2%{transform:translate(0px,0px);opacity:0} 25%{transform:translate(0px,0px);opacity:1} 25%{transform:translate(0px,0px);opacity:1} 29%{transform:translate(218px,-3px);opacity:1} 30%{transform:translate(218px,-3px);opacity:1} 30.8%{transform:translate(218px,-3px);opacity:0} 100%{transform:translate(218px,-3px);opacity:0}}.ed-eddy-w-v13{animation:ed-eddy-w-k-v13 20s linear infinite}@keyframes ed-eddy-w-k-s14{0%{opacity:0} 42.2%{opacity:0} 43%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s14{animation:ed-eddy-w-k-s14 20s linear infinite}@keyframes ed-eddy-w-k-f15{0%{transform:translate(-24px,0px);opacity:0} 43.2%{transform:translate(-24px,0px);opacity:0} 44%{transform:translate(-24px,0px);opacity:1} 44%{transform:translate(-24px,0px);opacity:1} 46%{transform:translate(0px,0px);opacity:1} 96%{transform:translate(0px,0px);opacity:1} 96.8%{transform:translate(0px,0px);opacity:0} 100%{transform:translate(0px,0px);opacity:0}}.ed-eddy-w-f15{animation:ed-eddy-w-k-f15 20s linear infinite}@keyframes ed-eddy-w-k-s16{0%{opacity:0} 45.2%{opacity:0} 46%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s16{animation:ed-eddy-w-k-s16 20s linear infinite}@keyframes ed-eddy-w-k-s17{0%{opacity:0} 47.2%{opacity:0} 48%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s17{animation:ed-eddy-w-k-s17 20s linear infinite}@keyframes ed-eddy-w-k-s18{0%{opacity:0} 46.2%{opacity:0} 47%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s18{animation:ed-eddy-w-k-s18 20s linear infinite}@keyframes ed-eddy-w-k-f19{0%{transform:translate(-24px,0px);opacity:0} 47.2%{transform:translate(-24px,0px);opacity:0} 48%{transform:translate(-24px,0px);opacity:1} 48%{transform:translate(-24px,0px);opacity:1} 50%{transform:translate(0px,0px);opacity:1} 96%{transform:translate(0px,0px);opacity:1} 96.8%{transform:translate(0px,0px);opacity:0} 100%{transform:translate(0px,0px);opacity:0}}.ed-eddy-w-f19{animation:ed-eddy-w-k-f19 20s linear infinite}@keyframes ed-eddy-w-k-s20{0%{opacity:0} 49.2%{opacity:0} 50%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s20{animation:ed-eddy-w-k-s20 20s linear infinite}@keyframes ed-eddy-w-k-s21{0%{opacity:0} 51.2%{opacity:0} 52%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s21{animation:ed-eddy-w-k-s21 20s linear infinite}@keyframes ed-eddy-w-k-s22{0%{opacity:0} 50.2%{opacity:0} 51%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s22{animation:ed-eddy-w-k-s22 20s linear infinite}@keyframes ed-eddy-w-k-f23{0%{transform:translate(-24px,0px);opacity:0} 51.2%{transform:translate(-24px,0px);opacity:0} 52%{transform:translate(-24px,0px);opacity:1} 52%{transform:translate(-24px,0px);opacity:1} 54%{transform:translate(0px,0px);opacity:1} 96%{transform:translate(0px,0px);opacity:1} 96.8%{transform:translate(0px,0px);opacity:0} 100%{transform:translate(0px,0px);opacity:0}}.ed-eddy-w-f23{animation:ed-eddy-w-k-f23 20s linear infinite}@keyframes ed-eddy-w-k-s24{0%{opacity:0} 53.2%{opacity:0} 54%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s24{animation:ed-eddy-w-k-s24 20s linear infinite}@keyframes ed-eddy-w-k-s25{0%{opacity:0} 55.2%{opacity:0} 56%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s25{animation:ed-eddy-w-k-s25 20s linear infinite}@keyframes ed-eddy-w-k-s26{0%{opacity:0.4} 63.2%{opacity:0.4} 64%{opacity:1} 94%{opacity:1} 94.8%{opacity:0.4} 100%{opacity:0.4}}.ed-eddy-w-s26{animation:ed-eddy-w-k-s26 20s linear infinite}@keyframes ed-eddy-w-k-s27{0%{opacity:0} 63.2%{opacity:0} 64%{opacity:1} 94%{opacity:1} 94.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s27{animation:ed-eddy-w-k-s27 20s linear infinite}@keyframes ed-eddy-w-k-s28{0%{opacity:0} 67.2%{opacity:0} 68%{opacity:1} 94%{opacity:1} 94.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s28{animation:ed-eddy-w-k-s28 20s linear infinite}@keyframes ed-eddy-w-k-s29{0%{opacity:0} 70.2%{opacity:0} 71%{opacity:1} 94%{opacity:1} 94.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s29{animation:ed-eddy-w-k-s29 20s linear infinite}@keyframes ed-eddy-w-k-s30{0%{opacity:0} 73.2%{opacity:0} 74%{opacity:1} 94%{opacity:1} 94.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s30{animation:ed-eddy-w-k-s30 20s linear infinite}@keyframes ed-eddy-w-k-s31{0%{opacity:0} 76.2%{opacity:0} 77%{opacity:1} 94%{opacity:1} 94.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s31{animation:ed-eddy-w-k-s31 20s linear infinite}@keyframes ed-eddy-w-k-f32{0%{transform:translate(0px,-10px);opacity:0} 80.2%{transform:translate(0px,-10px);opacity:0} 81%{transform:translate(0px,-10px);opacity:1} 81%{transform:translate(0px,-10px);opacity:1} 83%{transform:translate(0px,0px);opacity:1} 94%{transform:translate(0px,0px);opacity:1} 94.8%{transform:translate(0px,0px);opacity:0} 100%{transform:translate(0px,0px);opacity:0}}.ed-eddy-w-f32{animation:ed-eddy-w-k-f32 20s linear infinite}@keyframes ed-eddy-w-k-f33{0%{transform:translate(0px,-10px);opacity:0} 83.2%{transform:translate(0px,-10px);opacity:0} 84%{transform:translate(0px,-10px);opacity:1} 84%{transform:translate(0px,-10px);opacity:1} 86%{transform:translate(0px,0px);opacity:1} 94%{transform:translate(0px,0px);opacity:1} 94.8%{transform:translate(0px,0px);opacity:0} 100%{transform:translate(0px,0px);opacity:0}}.ed-eddy-w-f33{animation:ed-eddy-w-k-f33 20s linear infinite}@keyframes ed-eddy-w-k-s34{0%{opacity:0} 84.2%{opacity:0} 85%{opacity:1} 94%{opacity:1} 94.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s34{animation:ed-eddy-w-k-s34 20s linear infinite}@keyframes ed-eddy-w-k-s35{0%{opacity:0} 84.2%{opacity:0} 85%{opacity:1} 94%{opacity:1} 94.8%{opacity:0} 100%{opacity:0}}.ed-eddy-w-s35{animation:ed-eddy-w-k-s35 20s linear infinite}@keyframes ed-eddy-w-k-d36{0%{stroke-dashoffset:100;opacity:0} 63.5%{stroke-dashoffset:100;opacity:0} 64%{stroke-dashoffset:100;opacity:1} 67%{stroke-dashoffset:0;opacity:1} 94%{stroke-dashoffset:0;opacity:1} 94.8%{stroke-dashoffset:0;opacity:0} 100%{stroke-dashoffset:100;opacity:0}}.ed-eddy-w-d36{animation:ed-eddy-w-k-d36 20s linear infinite}@keyframes ed-eddy-w-k-cap37{0%{opacity:0.35} 1.2%{opacity:0.35} 2%{opacity:1} 30%{opacity:1} 30.8%{opacity:0.35} 100%{opacity:0.35}}.ed-eddy-w-cap37{animation:ed-eddy-w-k-cap37 20s linear infinite}@keyframes ed-eddy-w-k-cap38{0%{opacity:0.35} 29.2%{opacity:0.35} 30%{opacity:1} 44%{opacity:1} 44.8%{opacity:0.35} 100%{opacity:0.35}}.ed-eddy-w-cap38{animation:ed-eddy-w-k-cap38 20s linear infinite}@keyframes ed-eddy-w-k-cap39{0%{opacity:0.35} 43.2%{opacity:0.35} 44%{opacity:1} 64%{opacity:1} 64.8%{opacity:0.35} 100%{opacity:0.35}}.ed-eddy-w-cap39{animation:ed-eddy-w-k-cap39 20s linear infinite}@keyframes ed-eddy-w-k-cap40{0%{opacity:0.35} 63.2%{opacity:0.35} 64%{opacity:1} 94%{opacity:1} 94.8%{opacity:0.35} 100%{opacity:0.35}}.ed-eddy-w-cap40{animation:ed-eddy-w-k-cap40 20s linear infinite}</style>
+<defs><marker id="ed-eddy-w-ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="ed-eddy-w-ah" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect class="ed-eddy-w-bg" width="900" height="500" rx="10"/>
+<text class="ed-eddy-w-h" x="20" y="32">eddy</text>
+<text class="ed-eddy-w-m ed-eddy-w-sm" x="64" y="32">lists recorded meetings; a session reads them later</text>
+<text class="ed-eddy-w-hd" x="20" y="64">SERVICES</text>
+<rect class="ed-eddy-w-panel" x="20" y="76" width="176" height="80" rx="6"/>
+<text class="ed-eddy-w-t ed-eddy-w-sm ed-eddy-w-b" x="34" y="98">Wispr Flow</text>
+<g class="ed-eddy-w-s1">
+<rect class="ed-eddy-w-mchip" x="32" y="110" width="152" height="18" rx="4"/>
+<text class="ed-eddy-w-t ed-eddy-w-xxs" x="40" y="123">design review · 48 min</text>
+</g>
+<g class="ed-eddy-w-s2">
+<rect class="ed-eddy-w-mchip" x="32" y="132" width="152" height="18" rx="4"/>
+<text class="ed-eddy-w-t ed-eddy-w-xxs" x="40" y="145">check-in · 2 min</text>
+</g>
+<rect class="ed-eddy-w-panel" x="20" y="162" width="176" height="80" rx="6"/>
+<text class="ed-eddy-w-t ed-eddy-w-sm ed-eddy-w-b" x="34" y="184">Webex</text>
+<g class="ed-eddy-w-s3">
+<rect class="ed-eddy-w-mchip" x="32" y="196" width="152" height="18" rx="4"/>
+<text class="ed-eddy-w-t ed-eddy-w-xxs" x="40" y="209">vendor call · 31 min</text>
+</g>
+<rect class="ed-eddy-w-panel" x="20" y="248" width="176" height="80" rx="6"/>
+<text class="ed-eddy-w-t ed-eddy-w-sm ed-eddy-w-b" x="34" y="270">Microsoft Teams</text>
+<g class="ed-eddy-w-s4">
+<rect class="ed-eddy-w-mchip" x="32" y="282" width="152" height="18" rx="4"/>
+<text class="ed-eddy-w-t ed-eddy-w-xxs" x="40" y="295">planning · 55 min</text>
+</g>
+<rect class="ed-eddy-w-soft" x="216" y="44" width="220" height="380" rx="8"/>
+<text class="ed-eddy-w-hd" x="230" y="64">EDDY · A PART PER SERVICE</text>
+<rect class="ed-eddy-w-panel" x="230" y="384" width="192" height="32" rx="5"/>
+<text class="ed-eddy-w-m ed-eddy-w-xs" x="244" y="404">model calls while listing</text>
+<text class="ed-eddy-w-a ed-eddy-w-h ed-eddy-w-pulse ed-eddy-w-p5" x="408" y="406" text-anchor="end">0</text>
+<rect class="ed-eddy-w-panel" x="230" y="99" width="192" height="34" rx="5"/>
+<text class="ed-eddy-w-mono ed-eddy-w-sm ed-eddy-w-b" x="244" y="121">wispr</text>
+<text class="ed-eddy-w-m ed-eddy-w-xxs" x="408" y="120" text-anchor="end">lists · fetches</text>
+<rect class="ed-eddy-w-hl ed-eddy-w-s6" x="230" y="99" width="192" height="34" rx="5"/>
+<rect class="ed-eddy-w-panel" x="230" y="185" width="192" height="34" rx="5"/>
+<text class="ed-eddy-w-mono ed-eddy-w-sm ed-eddy-w-b" x="244" y="207">webex</text>
+<text class="ed-eddy-w-m ed-eddy-w-xxs" x="408" y="206" text-anchor="end">lists · fetches</text>
+<rect class="ed-eddy-w-hl ed-eddy-w-s7" x="230" y="185" width="192" height="34" rx="5"/>
+<rect class="ed-eddy-w-panel" x="230" y="271" width="192" height="34" rx="5"/>
+<text class="ed-eddy-w-mono ed-eddy-w-sm ed-eddy-w-b" x="244" y="293">teams</text>
+<text class="ed-eddy-w-m ed-eddy-w-xxs" x="408" y="292" text-anchor="end">lists · fetches</text>
+<rect class="ed-eddy-w-hl ed-eddy-w-s8" x="230" y="271" width="192" height="34" rx="5"/>
+<text class="ed-eddy-w-m ed-eddy-w-xxs ed-eddy-w-s9" x="258" y="149">skipped: check-in, 2 min</text>
+<rect class="ed-eddy-w-panel" x="230" y="318" width="192" height="58" rx="5"/>
+<text class="ed-eddy-w-hd" x="244" y="335">SHARED BY EVERY PART</text>
+<text class="ed-eddy-w-xxs" x="244" y="352">the key · the details</text>
+<text class="ed-eddy-w-xxs" x="244" y="367">the raw layout · the skip</text>
+<g class="ed-eddy-w-v10">
+<rect class="ed-eddy-w-achip" x="32" y="110" width="152" height="18" rx="4"/>
+<text class="ed-eddy-w-t ed-eddy-w-xxs" x="40" y="123">design review · 48 min</text>
+</g>
+<g class="ed-eddy-w-v11">
+<rect class="ed-eddy-w-achip" x="32" y="132" width="152" height="18" rx="4"/>
+<text class="ed-eddy-w-t ed-eddy-w-xxs" x="40" y="145">check-in · 2 min</text>
+</g>
+<g class="ed-eddy-w-v12">
+<rect class="ed-eddy-w-achip" x="32" y="196" width="152" height="18" rx="4"/>
+<text class="ed-eddy-w-t ed-eddy-w-xxs" x="40" y="209">vendor call · 31 min</text>
+</g>
+<g class="ed-eddy-w-v13">
+<rect class="ed-eddy-w-achip" x="32" y="282" width="152" height="18" rx="4"/>
+<text class="ed-eddy-w-t ed-eddy-w-xxs" x="40" y="295">planning · 55 min</text>
+</g>
+<text class="ed-eddy-w-hd" x="456" y="64">CAPTURES · KEYED</text>
+<path class="ed-eddy-w-aedge ed-eddy-w-s14" d="M424,116 H450" marker-end="url(#ed-eddy-w-ah)"/>
+<g class="ed-eddy-w-f15">
+<rect class="ed-eddy-w-panel" x="456" y="76" width="220" height="80" rx="6"/>
+<text class="ed-eddy-w-mono ed-eddy-w-xs ed-eddy-w-b" x="468" y="96">meeting/<tspan class="ed-eddy-w-a">wispr</tspan>/7f3c2a</text>
+<text class="ed-eddy-w-m ed-eddy-w-xxs" x="468" y="112">design review · 48 min · 4 people</text>
+</g>
+<g class="ed-eddy-w-s16">
+<path class="ed-eddy-w-file" d="M468,121 h7 l3,3 v9 h-10 z"/>
+<text class="ed-eddy-w-mono ed-eddy-w-xxs" x="484" y="130">transcript.json</text>
+<text class="ed-eddy-w-m ed-eddy-w-xxs" x="664" y="130" text-anchor="end">as served</text>
+</g>
+<g class="ed-eddy-w-s17">
+<path class="ed-eddy-w-file" d="M468,137 h7 l3,3 v9 h-10 z"/>
+<text class="ed-eddy-w-mono ed-eddy-w-xxs" x="484" y="146">transcript.txt</text>
+<text class="ed-eddy-w-m ed-eddy-w-xxs" x="664" y="146" text-anchor="end">one line per turn</text>
+</g>
+<path class="ed-eddy-w-aedge ed-eddy-w-s18" d="M424,202 H450" marker-end="url(#ed-eddy-w-ah)"/>
+<g class="ed-eddy-w-f19">
+<rect class="ed-eddy-w-panel" x="456" y="162" width="220" height="80" rx="6"/>
+<text class="ed-eddy-w-mono ed-eddy-w-xs ed-eddy-w-b" x="468" y="182">meeting/<tspan class="ed-eddy-w-a">webex</tspan>/3d77a1</text>
+<text class="ed-eddy-w-m ed-eddy-w-xxs" x="468" y="198">vendor call · 31 min · 3 people</text>
+</g>
+<g class="ed-eddy-w-s20">
+<path class="ed-eddy-w-file" d="M468,207 h7 l3,3 v9 h-10 z"/>
+<text class="ed-eddy-w-mono ed-eddy-w-xxs" x="484" y="216">transcript.vtt</text>
+<text class="ed-eddy-w-m ed-eddy-w-xxs" x="664" y="216" text-anchor="end">as served</text>
+</g>
+<g class="ed-eddy-w-s21">
+<path class="ed-eddy-w-file" d="M468,223 h7 l3,3 v9 h-10 z"/>
+<text class="ed-eddy-w-mono ed-eddy-w-xxs" x="484" y="232">transcript.txt</text>
+<text class="ed-eddy-w-m ed-eddy-w-xxs" x="664" y="232" text-anchor="end">one line per turn</text>
+</g>
+<path class="ed-eddy-w-aedge ed-eddy-w-s22" d="M424,288 H450" marker-end="url(#ed-eddy-w-ah)"/>
+<g class="ed-eddy-w-f23">
+<rect class="ed-eddy-w-panel" x="456" y="248" width="220" height="80" rx="6"/>
+<text class="ed-eddy-w-mono ed-eddy-w-xs ed-eddy-w-b" x="468" y="268">meeting/<tspan class="ed-eddy-w-a">teams</tspan>/9b1e04</text>
+<text class="ed-eddy-w-m ed-eddy-w-xxs" x="468" y="284">planning · 55 min · 6 people</text>
+</g>
+<g class="ed-eddy-w-s24">
+<path class="ed-eddy-w-file" d="M468,293 h7 l3,3 v9 h-10 z"/>
+<text class="ed-eddy-w-mono ed-eddy-w-xxs" x="484" y="302">transcript.vtt</text>
+<text class="ed-eddy-w-m ed-eddy-w-xxs" x="664" y="302" text-anchor="end">as served</text>
+</g>
+<g class="ed-eddy-w-s25">
+<path class="ed-eddy-w-file" d="M468,309 h7 l3,3 v9 h-10 z"/>
+<text class="ed-eddy-w-mono ed-eddy-w-xxs" x="484" y="318">transcript.txt</text>
+<text class="ed-eddy-w-m ed-eddy-w-xxs" x="664" y="318" text-anchor="end">one line per turn</text>
+</g>
+<path class="ed-eddy-w-edge ed-eddy-w-dash" d="M686,72 V412"/>
+<text class="ed-eddy-w-m ed-eddy-w-xxs" x="686" y="428" text-anchor="middle">eddy ends here</text>
+<text class="ed-eddy-w-hd" x="696" y="64">A READER · LATER</text>
+<g class="ed-eddy-w-s26">
+<rect class="ed-eddy-w-panel" x="696" y="76" width="184" height="166" rx="6"/>
+<text class="ed-eddy-w-t ed-eddy-w-sm ed-eddy-w-b" x="710" y="98">a Claude session</text>
+<text class="ed-eddy-w-m ed-eddy-w-xs" x="710" y="115">reads transcript.txt</text>
+</g>
+<rect class="ed-eddy-w-hl ed-eddy-w-s27" x="696" y="76" width="184" height="166" rx="6"/>
+<text class="ed-eddy-w-mono ed-eddy-w-xxs ed-eddy-w-s28" x="710" y="142">Ana: export ships Friday</text>
+<text class="ed-eddy-w-mono ed-eddy-w-xxs ed-eddy-w-s29" x="710" y="164">Raj: legal needs a week</text>
+<text class="ed-eddy-w-mono ed-eddy-w-xxs ed-eddy-w-s30" x="710" y="186">Ana: then the 24th</text>
+<text class="ed-eddy-w-mono ed-eddy-w-xxs ed-eddy-w-s31" x="710" y="208">Mei: I'll tell them</text>
+<g class="ed-eddy-w-f32">
+<rect class="ed-eddy-w-chip" x="696" y="254" width="72" height="22" rx="11"/>
+<text class="ed-eddy-w-ink ed-eddy-w-xs ed-eddy-w-b" x="732" y="269" text-anchor="middle">decision</text>
+</g>
+<g class="ed-eddy-w-f33">
+<rect class="ed-eddy-w-chip" x="776" y="254" width="44" height="22" rx="11"/>
+<text class="ed-eddy-w-ink ed-eddy-w-xs ed-eddy-w-b" x="798" y="269" text-anchor="middle">ask</text>
+</g>
+<text class="ed-eddy-w-m ed-eddy-w-xxs ed-eddy-w-s34" x="696" y="296">signals, written through</text>
+<text class="ed-eddy-w-m ed-eddy-w-xxs ed-eddy-w-s35" x="696" y="311">millpond, never by eddy</text>
+<path class="ed-eddy-w-aedge ed-eddy-w-draw ed-eddy-w-d36" pathLength="100" d="M676,106 C686,106 684,136 692,136" marker-end="url(#ed-eddy-w-ah)"/>
+<g class="ed-eddy-w-cap ed-eddy-w-cap37">
+<circle class="ed-eddy-w-badge" cx="32" cy="460" r="11"/>
+<text class="ed-eddy-w-badget" x="32" y="464" text-anchor="middle">1</text>
+<text class="ed-eddy-w-t ed-eddy-w-sm" x="50" y="456">A part per service lists</text>
+<text class="ed-eddy-w-t ed-eddy-w-sm" x="50" y="473">the meetings recorded there.</text>
+</g>
+<g class="ed-eddy-w-cap ed-eddy-w-cap38">
+<circle class="ed-eddy-w-badge" cx="252" cy="460" r="11"/>
+<text class="ed-eddy-w-badget" x="252" y="464" text-anchor="middle">2</text>
+<text class="ed-eddy-w-t ed-eddy-w-sm" x="270" y="456">No model runs. A meeting</text>
+<text class="ed-eddy-w-t ed-eddy-w-sm" x="270" y="473">too short to matter is skipped.</text>
+</g>
+<g class="ed-eddy-w-cap ed-eddy-w-cap39">
+<circle class="ed-eddy-w-badge" cx="472" cy="460" r="11"/>
+<text class="ed-eddy-w-badget" x="472" y="464" text-anchor="middle">3</text>
+<text class="ed-eddy-w-t ed-eddy-w-sm" x="490" y="456">Each is kept by its key,</text>
+<text class="ed-eddy-w-t ed-eddy-w-sm" x="490" y="473">the transcript whole.</text>
+</g>
+<g class="ed-eddy-w-cap ed-eddy-w-cap40">
+<circle class="ed-eddy-w-badge" cx="692" cy="460" r="11"/>
+<text class="ed-eddy-w-badget" x="692" y="464" text-anchor="middle">4</text>
+<text class="ed-eddy-w-t ed-eddy-w-sm" x="710" y="456">A session reads it later.</text>
+<text class="ed-eddy-w-t ed-eddy-w-sm" x="710" y="473">eddy never does.</text>
+</g>
+</svg>

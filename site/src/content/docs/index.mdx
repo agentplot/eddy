@@ -1,0 +1,103 @@
+---
+title: eddy
+description: eddy lists recorded meetings across services, with no model running, and keeps each transcript whole for a session to read later.
+template: splash
+banner:
+  content: |
+    eddy is designed, not built. This site shows the design; the
+    <a href="https://agentplot.github.io/blueprints/eddy/">design book</a> holds it whole.
+hero:
+  tagline: eddy lists recorded meetings across services with no model running, and keeps each transcript whole for a session to read later.
+  actions:
+    - text: How it works
+      link: /eddy/how-it-works/
+      icon: right-arrow
+    - text: Read the design
+      link: https://agentplot.github.io/blueprints/eddy/
+      icon: external
+      variant: secondary
+    - text: GitHub
+      link: https://github.com/agentplot/eddy
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+import Flow from '../../components/Flow.astro';
+import Step from '../../components/Step.astro';
+
+## Why
+
+A meeting holds decisions and asks that change a repository's work.
+Finding the meetings is arithmetic: which services, since when, how
+long, under what id. Reading them is judgment. eddy does the arithmetic
+and leaves the judgment to a session, so no model runs to list a day's
+meetings, and a meeting keeps one key however often it is listed.
+
+<Flow>
+  <Step kind="list" title="List">
+    A part per service lists the meetings recorded there since its
+    cursor and fetches each transcript. No model runs.
+  </Step>
+  <Step kind="key" title="Key">
+    eddy keys each meeting by its service and the meeting's own id,
+    `meeting/wispr/7f3c2a`. The same meeting gets the same key from
+    every host and every run.
+  </Step>
+  <Step kind="keep" title="Keep">
+    It writes the transcript as the service served it, plus a plain copy
+    with one line per turn, and skips a meeting too short to hold
+    anything.
+  </Step>
+  <Step kind="read" title="Read later">
+    A session reads the transcript later and writes its signals through
+    millpond. eddy never reads a meeting.
+  </Step>
+</Flow>
+
+## Three ways to run it
+
+<div class="three">
+<CardGrid>
+  <Card title="In Claude Code" icon="laptop">
+    eddy's Claude Code plugin pulls a meeting's transcript into a
+    session, so the session works from what was said.
+  </Card>
+  <Card title="Beside your panes" icon="list-format">
+    eddy's herdr plugin shows the day's meetings beside the agents'
+    panes.
+  </Card>
+  <Card title="Into the inbox" icon="random">
+    eddy's Flywheel plugin holds one part per service. millpond runs
+    each part on a schedule and keeps what it lists, and a reader
+    session turns each transcript into signals.
+  </Card>
+</CardGrid>
+</div>
+
+## Services
+
+Each part keys a meeting as `meeting/<part>/<meeting id>`.
+
+| Part | Source | When |
+|---|---|---|
+| `wispr` | Wispr Flow's MCP endpoint, as an MCP client with its own sign-in | first |
+| `webex` | Webex's transcripts API | when a partition records on Webex |
+| `teams` | Microsoft Graph's meeting transcripts | when a tenant's administrator consents |
+
+Any other service joins as a plugin of its own that passes the meeting
+checks, and a generic MCP part and millpond's folder drop take the
+rest.
+
+<CardGrid>
+  <LinkCard
+    title="How it works"
+    description="One part per service, what a meeting becomes on disk, and how others add a service."
+    href="/eddy/how-it-works/"
+  />
+  <LinkCard
+    title="How it fits"
+    description="eddy beside headwater, millpond, sluice and Flywheel."
+    href="/eddy/how-it-fits/"
+  />
+</CardGrid>

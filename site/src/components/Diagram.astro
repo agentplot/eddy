@@ -1,0 +1,68 @@
+---
+// One of the diagrams, inlined so it follows the site's theme toggle: the
+// wide layout, and on a phone the narrow one, each drawn by
+// docs/diagrams/diagrams.py --scoped into src/generated/ (scripts/diagrams.mjs).
+// `breakout` lets the wide layout grow past the text column, up to the
+// width it is drawn at, on a page without the "On this page" column.
+interface Props {
+  name: 'eddy' | 'parts' | 'disk' | 'contribute';
+  breakout?: boolean;
+}
+const { name, breakout = false } = Astro.props;
+const svgs = import.meta.glob('../generated/*.svg', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+const wide = svgs[`../generated/${name}-wide.svg`];
+const narrow = svgs[`../generated/${name}-narrow.svg`];
+---
+
+<figure class:list={['diagram', 'not-content', { breakout }]}>
+  <div class="wide" set:html={wide} />
+  <div class="narrow" set:html={narrow} />
+</figure>
+
+<style>
+  .diagram {
+    margin: 2rem 0;
+    line-height: 0;
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 3rem -1.5rem rgb(0 0 0 / 0.45);
+  }
+  .diagram :global(svg) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .narrow {
+    display: none;
+  }
+  @media (max-width: 47.99rem) {
+    .diagram {
+      max-width: 28rem;
+      margin-inline: auto;
+    }
+    .wide {
+      display: none;
+    }
+    .narrow {
+      display: block;
+    }
+  }
+  @media (min-width: 48rem) {
+    .breakout {
+      --w: min(60rem, calc(100vw - var(--eddy-side, 0rem) - 3.5rem));
+      width: var(--w);
+      max-width: none;
+    }
+  }
+  @media (min-width: 50rem) {
+    .breakout {
+      --eddy-side: var(--sl-sidebar-width, 18.75rem);
+    }
+  }
+  @media (min-width: 72rem) {
+    .breakout {
+      margin-inline: calc((100% - var(--w)) / 2);
+    }
+  }
+</style>

@@ -1,0 +1,75 @@
+---
+title: How it works
+description: One part per meeting service, what a meeting becomes on disk, and how others add a service.
+tableOfContents: false
+---
+
+import Diagram from '../../components/Diagram.astro';
+
+eddy is one tool with a part per meeting service. A part lists and
+fetches. eddy does everything after that the same way for every
+service, and stops before anything reads a transcript.
+
+## One part per service
+
+<Diagram name="parts" breakout />
+
+A part's own code is listing and fetching from its service: it lists
+the meetings recorded since its cursor and fetches each transcript.
+`wispr` does this as an MCP client of Wispr Flow's endpoint, with a
+sign-in of its own, and starts no Claude session to list meetings.
+
+The parts share everything else:
+
+- **the key's shape**, `meeting/<service>/<meeting id>`;
+- **the meeting's details**: its title, start, length and attendees;
+- **the raw layout**: the transcript as served, plus a plain copy with
+  one line per turn;
+- **the skip**: a meeting too short to hold anything is left out.
+
+So a new service costs a lister and a fetcher, and every part's
+captures read alike.
+
+## What a meeting becomes
+
+<Diagram name="disk" breakout />
+
+eddy writes two files for each meeting it keeps. The first is the
+transcript exactly as the service served it. The second is a plain
+copy that joins each speaker's consecutive segments into one line per
+turn, with the speakers the service named. A reader working from the
+plain copy names any speaker the transcript leaves unnamed.
+
+Beside the files, eddy prints one capture line for the inbox:
+
+- **`key`** is `meeting/<service>/<meeting id>`, so the same meeting
+  gets the same key from every host and every run.
+- **`event_at`** is when the meeting started, never when eddy listed
+  it, since a signal's weight counts from the day the meeting happened.
+- **`raw`** names the two files.
+- **No `excerpt`.** A meeting is never its own excerpt; a reader session
+  reads the transcript and writes its signals.
+
+millpond takes the line, passes over a key it already holds, banks the
+two files in the host's raw bank and writes the capture into the inbox.
+A transcript runs to megabytes and holds people's words, so it stays on
+the host and never enters git; only the line does.
+
+## Anyone can add a service
+
+<Diagram name="contribute" breakout />
+
+A part counts as a meeting part when it passes the meeting checks in
+the capture contract's conformance pack. The checks hold a part to the
+shape every part shares: the key, `event_at` as the meeting's start,
+both raw files, the skip, and no excerpt.
+
+- **eddy's own parts** cover the services most partitions record on.
+  eddy tests each one by replaying recorded responses, so the checks
+  run without the service.
+- **A plugin of your own** lists your service's meetings. It joins the
+  plugin index beside eddy's once it passes the same checks.
+- **The long tail** goes to two catch-alls. A generic MCP part lists
+  meetings from any MCP endpoint that serves transcripts. millpond's
+  folder drop takes a file dropped in a watched folder as one capture,
+  keyed by the file's content, so a file dropped twice is one capture.

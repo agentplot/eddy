@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480" role="img" aria-labelledby="ed-disk-w-ttl ed-disk-w-dsc">
+<title id="ed-disk-w-ttl">What a meeting becomes: two raw files on the host and one capture line</title>
+<desc id="ed-disk-w-dsc">The transcript as the service served it: timed segments, each with a speaker and a few words. eddy writes it whole as transcript.json, then joins each speaker's consecutive segments into a plain copy, transcript.txt, with one line per turn: Ana, so the export ships Friday; Raj, legal needs a week first; Ana, then the 24th; Mei, I'll tell the customer. Then one capture line describes the meeting: its key meeting slash wispr slash 7f3c2a, source meeting, event_at when the meeting started, its title, the two raw files, and no excerpt, since a reader reads it. The two files stay on the host and never enter git; millpond writes the line into the inbox.</desc>
+<style>:root{--bg:#ebe9e2;--panel:#fbfaf7;--fg:#0e1116;--muted:#5d6370;--rule:#d0cdc3;--soft:#e0ddd4;--accent:#6b4fd8;--accent-soft:#e4ddfb;--ok:#1f8a4c;--bad:#c0392b;--ink:#fbfaf7}@media (prefers-color-scheme:dark){:root{--bg:#14181f;--panel:#1b2029;--fg:#f2f1ec;--muted:#9a9fab;--rule:#2f3540;--soft:#232933;--accent:#a68cff;--accent-soft:#2c2547;--ok:#45c27a;--bad:#f08a7e;--ink:#14181f}}
+text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:var(--fg)}
+.ed-disk-w-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.ed-disk-w-t{fill:var(--fg)} .ed-disk-w-m{fill:var(--muted)} .ed-disk-w-a{fill:var(--accent)} .ed-disk-w-ok{fill:var(--ok)} .ed-disk-w-bad{fill:var(--bad)} .ed-disk-w-ink{fill:var(--ink)}
+.ed-disk-w-b{font-weight:600} .ed-disk-w-h{font-size:17px;font-weight:700}
+.ed-disk-w-hd{font-size:11px;letter-spacing:.07em;fill:var(--muted);font-weight:600}
+.ed-disk-w-sm{font-size:13px} .ed-disk-w-xs{font-size:11.5px} .ed-disk-w-xxs{font-size:10.5px} .ed-disk-w-f12{font-size:12px}
+.ed-disk-w-bg{fill:var(--bg)} .ed-disk-w-soft{fill:var(--soft)}
+.ed-disk-w-panel{fill:var(--panel);stroke:var(--rule);stroke-width:1.2}
+.ed-disk-w-own{fill:var(--panel);stroke:var(--accent);stroke-width:1.5}
+.ed-disk-w-mchip{fill:var(--soft);stroke:var(--rule);stroke-width:1}
+.ed-disk-w-achip{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.2}
+.ed-disk-w-chip{fill:var(--accent)}
+.ed-disk-w-hl{fill:none;stroke:var(--accent);stroke-width:2}
+.ed-disk-w-hlbar{fill:var(--accent-soft)}
+.ed-disk-w-edge{fill:none;stroke:var(--muted);stroke-width:1.5}
+.ed-disk-w-aedge{fill:none;stroke:var(--accent);stroke-width:2}
+.ed-disk-w-dash{stroke-dasharray:4 4}
+.ed-disk-w-slot{fill:none;stroke:var(--rule);stroke-width:1.5;stroke-dasharray:5 4}
+.ed-disk-w-tick{fill:none;stroke:var(--ok);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.ed-disk-w-cross{fill:none;stroke:var(--bad);stroke-width:2.2;stroke-linecap:round}
+.ed-disk-w-ring{fill:var(--panel);stroke:var(--rule);stroke-width:1.2}
+.ed-disk-w-file{fill:var(--panel);stroke:var(--muted);stroke-width:1}
+.ed-disk-w-badge{fill:var(--accent)} .ed-disk-w-badget{fill:var(--ink);font-size:12px;font-weight:700}
+.ed-disk-w-ah{fill:var(--accent)}
+.ed-disk-w-pulse{transform-box:fill-box;transform-origin:center}
+.ed-disk-w-draw{stroke-dasharray:100}
+.ed-disk-w-ghost{opacity:.5}
+@media (prefers-reduced-motion:reduce){*{animation-play-state:paused!important;animation-delay:-14.08s!important}.ed-disk-w-cap{animation:none!important;opacity:1!important}}@keyframes ed-disk-w-k-s1{0%{opacity:0} 2.2%{opacity:0} 3%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s1{animation:ed-disk-w-k-s1 16s linear infinite}@keyframes ed-disk-w-k-s2{0%{opacity:0} 4.2%{opacity:0} 5%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s2{animation:ed-disk-w-k-s2 16s linear infinite}@keyframes ed-disk-w-k-s3{0%{opacity:0} 6.2%{opacity:0} 7%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s3{animation:ed-disk-w-k-s3 16s linear infinite}@keyframes ed-disk-w-k-s4{0%{opacity:0} 8.2%{opacity:0} 9%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s4{animation:ed-disk-w-k-s4 16s linear infinite}@keyframes ed-disk-w-k-s5{0%{opacity:0} 10.2%{opacity:0} 11%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s5{animation:ed-disk-w-k-s5 16s linear infinite}@keyframes ed-disk-w-k-s6{0%{opacity:0} 12.2%{opacity:0} 13%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s6{animation:ed-disk-w-k-s6 16s linear infinite}@keyframes ed-disk-w-k-s7{0%{opacity:0} 14.2%{opacity:0} 15%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s7{animation:ed-disk-w-k-s7 16s linear infinite}@keyframes ed-disk-w-k-s8{0%{opacity:0} 20.2%{opacity:0} 21%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s8{animation:ed-disk-w-k-s8 16s linear infinite}@keyframes ed-disk-w-k-s9{0%{opacity:0} 28.2%{opacity:0} 29%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s9{animation:ed-disk-w-k-s9 16s linear infinite}@keyframes ed-disk-w-k-s10{0%{opacity:0} 36.2%{opacity:0} 37%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s10{animation:ed-disk-w-k-s10 16s linear infinite}@keyframes ed-disk-w-k-s11{0%{opacity:0} 40.2%{opacity:0} 41%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s11{animation:ed-disk-w-k-s11 16s linear infinite}@keyframes ed-disk-w-k-f12{0%{transform:translate(-246px,-18px);opacity:0} 17.2%{transform:translate(-246px,-18px);opacity:0} 18%{transform:translate(-246px,-18px);opacity:1} 18%{transform:translate(-246px,-18px);opacity:1} 21%{transform:translate(0px,0px);opacity:1} 96%{transform:translate(0px,0px);opacity:1} 96.8%{transform:translate(0px,0px);opacity:0} 100%{transform:translate(0px,0px);opacity:0}}.ed-disk-w-f12{animation:ed-disk-w-k-f12 16s linear infinite}@keyframes ed-disk-w-k-f13{0%{transform:translate(-346.8px,12px);opacity:0} 21.2%{transform:translate(-346.8px,12px);opacity:0} 22%{transform:translate(-346.8px,12px);opacity:1} 22%{transform:translate(-346.8px,12px);opacity:1} 25%{transform:translate(0px,0px);opacity:1} 96%{transform:translate(0px,0px);opacity:1} 96.8%{transform:translate(0px,0px);opacity:0} 100%{transform:translate(0px,0px);opacity:0}}.ed-disk-w-f13{animation:ed-disk-w-k-f13 16s linear infinite}@keyframes ed-disk-w-k-f14{0%{transform:translate(-246px,-2px);opacity:0} 25.2%{transform:translate(-246px,-2px);opacity:0} 26%{transform:translate(-246px,-2px);opacity:1} 26%{transform:translate(-246px,-2px);opacity:1} 29%{transform:translate(0px,0px);opacity:1} 96%{transform:translate(0px,0px);opacity:1} 96.8%{transform:translate(0px,0px);opacity:0} 100%{transform:translate(0px,0px);opacity:0}}.ed-disk-w-f14{animation:ed-disk-w-k-f14 16s linear infinite}@keyframes ed-disk-w-k-f15{0%{transform:translate(-332.4px,28px);opacity:0} 29.2%{transform:translate(-332.4px,28px);opacity:0} 30%{transform:translate(-332.4px,28px);opacity:1} 30%{transform:translate(-332.4px,28px);opacity:1} 33%{transform:translate(0px,0px);opacity:1} 96%{transform:translate(0px,0px);opacity:1} 96.8%{transform:translate(0px,0px);opacity:0} 100%{transform:translate(0px,0px);opacity:0}}.ed-disk-w-f15{animation:ed-disk-w-k-f15 16s linear infinite}@keyframes ed-disk-w-k-f16{0%{transform:translate(-246px,14px);opacity:0} 33.2%{transform:translate(-246px,14px);opacity:0} 34%{transform:translate(-246px,14px);opacity:1} 34%{transform:translate(-246px,14px);opacity:1} 37%{transform:translate(0px,0px);opacity:1} 96%{transform:translate(0px,0px);opacity:1} 96.8%{transform:translate(0px,0px);opacity:0} 100%{transform:translate(0px,0px);opacity:0}}.ed-disk-w-f16{animation:ed-disk-w-k-f16 16s linear infinite}@keyframes ed-disk-w-k-f17{0%{transform:translate(-246px,0px);opacity:0} 37.2%{transform:translate(-246px,0px);opacity:0} 38%{transform:translate(-246px,0px);opacity:1} 38%{transform:translate(-246px,0px);opacity:1} 41%{transform:translate(0px,0px);opacity:1} 96%{transform:translate(0px,0px);opacity:1} 96.8%{transform:translate(0px,0px);opacity:0} 100%{transform:translate(0px,0px);opacity:0}}.ed-disk-w-f17{animation:ed-disk-w-k-f17 16s linear infinite}@keyframes ed-disk-w-k-f18{0%{transform:translate(-318px,30px);opacity:0} 41.2%{transform:translate(-318px,30px);opacity:0} 42%{transform:translate(-318px,30px);opacity:1} 42%{transform:translate(-318px,30px);opacity:1} 45%{transform:translate(0px,0px);opacity:1} 96%{transform:translate(0px,0px);opacity:1} 96.8%{transform:translate(0px,0px);opacity:0} 100%{transform:translate(0px,0px);opacity:0}}.ed-disk-w-f18{animation:ed-disk-w-k-f18 16s linear infinite}@keyframes ed-disk-w-k-s19{0%{opacity:0} 47.2%{opacity:0} 48%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s19{animation:ed-disk-w-k-s19 16s linear infinite}@keyframes ed-disk-w-k-s20{0%{opacity:0} 49.2%{opacity:0} 50%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s20{animation:ed-disk-w-k-s20 16s linear infinite}@keyframes ed-disk-w-k-s21{0%{opacity:0} 53.2%{opacity:0} 54%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s21{animation:ed-disk-w-k-s21 16s linear infinite}@keyframes ed-disk-w-k-s22{0%{opacity:0} 57.2%{opacity:0} 58%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s22{animation:ed-disk-w-k-s22 16s linear infinite}@keyframes ed-disk-w-k-s23{0%{opacity:0} 62.2%{opacity:0} 63%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s23{animation:ed-disk-w-k-s23 16s linear infinite}@keyframes ed-disk-w-k-s24{0%{opacity:0} 66.2%{opacity:0} 67%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s24{animation:ed-disk-w-k-s24 16s linear infinite}@keyframes ed-disk-w-k-s25{0%{opacity:0} 68.2%{opacity:0} 69%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s25{animation:ed-disk-w-k-s25 16s linear infinite}@keyframes ed-disk-w-k-s26{0%{opacity:0} 72.2%{opacity:0} 73%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s26{animation:ed-disk-w-k-s26 16s linear infinite}@keyframes ed-disk-w-k-s27{0%{opacity:0} 59.2%{opacity:0} 60%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s27{animation:ed-disk-w-k-s27 16s linear infinite}@keyframes ed-disk-w-k-s28{0%{opacity:0} 47.2%{opacity:0} 48%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s28{animation:ed-disk-w-k-s28 16s linear infinite}@keyframes ed-disk-w-k-s29{0%{opacity:0} 79.2%{opacity:0} 80%{opacity:1} 96%{opacity:1} 96.8%{opacity:0} 100%{opacity:0}}.ed-disk-w-s29{animation:ed-disk-w-k-s29 16s linear infinite}@keyframes ed-disk-w-k-cap30{0%{opacity:0.35} 2.2%{opacity:0.35} 3%{opacity:1} 18%{opacity:1} 18.8%{opacity:0.35} 100%{opacity:0.35}}.ed-disk-w-cap30{animation:ed-disk-w-k-cap30 16s linear infinite}@keyframes ed-disk-w-k-cap31{0%{opacity:0.35} 17.2%{opacity:0.35} 18%{opacity:1} 50%{opacity:1} 50.8%{opacity:0.35} 100%{opacity:0.35}}.ed-disk-w-cap31{animation:ed-disk-w-k-cap31 16s linear infinite}@keyframes ed-disk-w-k-cap32{0%{opacity:0.35} 49.2%{opacity:0.35} 50%{opacity:1} 80%{opacity:1} 80.8%{opacity:0.35} 100%{opacity:0.35}}.ed-disk-w-cap32{animation:ed-disk-w-k-cap32 16s linear infinite}@keyframes ed-disk-w-k-cap33{0%{opacity:0.35} 79.2%{opacity:0.35} 80%{opacity:1} 94%{opacity:1} 94.8%{opacity:0.35} 100%{opacity:0.35}}.ed-disk-w-cap33{animation:ed-disk-w-k-cap33 16s linear infinite}</style>
+<defs><marker id="ed-disk-w-ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="ed-disk-w-ah" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect class="ed-disk-w-bg" width="900" height="480" rx="10"/>
+<text class="ed-disk-w-h" x="20" y="32">What a meeting becomes</text>
+<text class="ed-disk-w-m ed-disk-w-sm" x="232" y="32">one line for the inbox, and two files that stay on this host</text>
+<rect class="ed-disk-w-panel" x="20" y="52" width="270" height="296" rx="6"/>
+<text class="ed-disk-w-hd" x="34" y="72">AS SERVED · transcript.json</text>
+<g class="ed-disk-w-s1">
+<text class="ed-disk-w-mono ed-disk-w-xxs ed-disk-w-m" x="34" y="100">00:12</text>
+<text class="ed-disk-w-xs ed-disk-w-b" x="78" y="100">Ana</text>
+<text class="ed-disk-w-mono ed-disk-w-f12" x="114" y="100">so the export</text>
+</g>
+<g class="ed-disk-w-s2">
+<text class="ed-disk-w-mono ed-disk-w-xxs ed-disk-w-m" x="34" y="130">00:14</text>
+<text class="ed-disk-w-xs ed-disk-w-b" x="78" y="130">Ana</text>
+<text class="ed-disk-w-mono ed-disk-w-f12" x="114" y="130">ships Friday</text>
+</g>
+<g class="ed-disk-w-s3">
+<text class="ed-disk-w-mono ed-disk-w-xxs ed-disk-w-m" x="34" y="160">00:15</text>
+<text class="ed-disk-w-xs ed-disk-w-b" x="78" y="160">Raj</text>
+<text class="ed-disk-w-mono ed-disk-w-f12" x="114" y="160">legal needs</text>
+</g>
+<g class="ed-disk-w-s4">
+<text class="ed-disk-w-mono ed-disk-w-xxs ed-disk-w-m" x="34" y="190">00:17</text>
+<text class="ed-disk-w-xs ed-disk-w-b" x="78" y="190">Raj</text>
+<text class="ed-disk-w-mono ed-disk-w-f12" x="114" y="190">a week first</text>
+</g>
+<g class="ed-disk-w-s5">
+<text class="ed-disk-w-mono ed-disk-w-xxs ed-disk-w-m" x="34" y="220">00:19</text>
+<text class="ed-disk-w-xs ed-disk-w-b" x="78" y="220">Ana</text>
+<text class="ed-disk-w-mono ed-disk-w-f12" x="114" y="220">then the 24th</text>
+</g>
+<g class="ed-disk-w-s6">
+<text class="ed-disk-w-mono ed-disk-w-xxs ed-disk-w-m" x="34" y="250">00:21</text>
+<text class="ed-disk-w-xs ed-disk-w-b" x="78" y="250">Mei</text>
+<text class="ed-disk-w-mono ed-disk-w-f12" x="114" y="250">I'll tell</text>
+</g>
+<g class="ed-disk-w-s7">
+<text class="ed-disk-w-mono ed-disk-w-xxs ed-disk-w-m" x="34" y="280">00:22</text>
+<text class="ed-disk-w-xs ed-disk-w-b" x="78" y="280">Mei</text>
+<text class="ed-disk-w-mono ed-disk-w-f12" x="114" y="280">the customer</text>
+</g>
+<text class="ed-disk-w-m ed-disk-w-xxs" x="34" y="330">timed segments, as the service sent them</text>
+<rect class="ed-disk-w-panel" x="310" y="52" width="290" height="296" rx="6"/>
+<text class="ed-disk-w-hd" x="324" y="72">ONE LINE PER TURN · transcript.txt</text>
+<text class="ed-disk-w-mono ed-disk-w-f12 ed-disk-w-b ed-disk-w-s8" x="324" y="118">Ana:</text>
+<text class="ed-disk-w-mono ed-disk-w-f12 ed-disk-w-b ed-disk-w-s9" x="324" y="162">Raj:</text>
+<text class="ed-disk-w-mono ed-disk-w-f12 ed-disk-w-b ed-disk-w-s10" x="324" y="206">Ana:</text>
+<text class="ed-disk-w-mono ed-disk-w-f12 ed-disk-w-b ed-disk-w-s11" x="324" y="250">Mei:</text>
+<text class="ed-disk-w-mono ed-disk-w-f12 ed-disk-w-f12" x="360" y="118">so the export</text>
+<text class="ed-disk-w-mono ed-disk-w-f12 ed-disk-w-f13" x="460.8" y="118">ships Friday</text>
+<text class="ed-disk-w-mono ed-disk-w-f12 ed-disk-w-f14" x="360" y="162">legal needs</text>
+<text class="ed-disk-w-mono ed-disk-w-f12 ed-disk-w-f15" x="446.4" y="162">a week first</text>
+<text class="ed-disk-w-mono ed-disk-w-f12 ed-disk-w-f16" x="360" y="206">then the 24th</text>
+<text class="ed-disk-w-mono ed-disk-w-f12 ed-disk-w-f17" x="360" y="250">I'll tell</text>
+<text class="ed-disk-w-mono ed-disk-w-f12 ed-disk-w-f18" x="432" y="250">the customer</text>
+<text class="ed-disk-w-m ed-disk-w-xxs" x="324" y="330">speakers as served; a reader names the rest</text>
+<rect class="ed-disk-w-panel" x="620" y="52" width="260" height="296" rx="6"/>
+<text class="ed-disk-w-hd" x="634" y="72">THE CAPTURE LINE · to millpond</text>
+<text class="ed-disk-w-mono ed-disk-w-xxs ed-disk-w-m ed-disk-w-s19" x="634" y="96">{"capture": {</text>
+<g class="ed-disk-w-s20">
+<text class="ed-disk-w-mono ed-disk-w-xxs ed-disk-w-m" x="646" y="120">key</text>
+<text class="ed-disk-w-mono ed-disk-w-xxs ed-disk-w-b" x="706" y="120">meeting/<tspan class="ed-disk-w-a">wispr</tspan>/7f3c2a</text>
+</g>
+<g class="ed-disk-w-s21">
+<text class="ed-disk-w-mono ed-disk-w-xxs ed-disk-w-m" x="646" y="146">source</text>
+<text class="ed-disk-w-mono ed-disk-w-xxs" x="706" y="146">meeting</text>
+</g>
+<g class="ed-disk-w-s22">
+<text class="ed-disk-w-mono ed-disk-w-xxs ed-disk-w-m" x="646" y="172">event_at</text>
+<text class="ed-disk-w-mono ed-disk-w-xxs" x="706" y="172">2026-10-16T14:00:00Z</text>
+</g>
+<g class="ed-disk-w-s23">
+<text class="ed-disk-w-mono ed-disk-w-xxs ed-disk-w-m" x="646" y="210">title</text>
+<text class="ed-disk-w-mono ed-disk-w-xxs" x="706" y="210">design review</text>
+</g>
+<g class="ed-disk-w-s24">
+<text class="ed-disk-w-mono ed-disk-w-xxs ed-disk-w-m" x="646" y="236">raw</text>
+<text class="ed-disk-w-mono ed-disk-w-xxs" x="706" y="236">transcript.json</text>
+</g>
+<g class="ed-disk-w-s25">
+<text class="ed-disk-w-mono ed-disk-w-xxs ed-disk-w-m" x="646" y="262"></text>
+<text class="ed-disk-w-mono ed-disk-w-xxs" x="706" y="262">transcript.txt</text>
+</g>
+<g class="ed-disk-w-s26">
+<text class="ed-disk-w-mono ed-disk-w-xxs ed-disk-w-m" x="646" y="288">excerpt</text>
+<text class="ed-disk-w-mono ed-disk-w-xxs" x="706" y="288">none: a reader reads it</text>
+</g>
+<text class="ed-disk-w-a ed-disk-w-xxs ed-disk-w-s27" x="706" y="186">when the meeting started</text>
+<text class="ed-disk-w-mono ed-disk-w-xxs ed-disk-w-m ed-disk-w-s28" x="634" y="330">}}</text>
+<path class="ed-disk-w-edge ed-disk-w-s29" d="M24,362 v8 h572 v-8 M310,370 v8"/>
+<text class="ed-disk-w-t ed-disk-w-xs ed-disk-w-s29" x="310" y="396" text-anchor="middle">stays on this host, in its raw bank · never enters git</text>
+<path class="ed-disk-w-aedge ed-disk-w-s29" d="M624,362 v8 h252 v-8 M750,370 v8"/>
+<text class="ed-disk-w-a ed-disk-w-xs ed-disk-w-s29" x="750" y="396" text-anchor="middle">millpond writes it into the inbox</text>
+<g class="ed-disk-w-cap ed-disk-w-cap30">
+<circle class="ed-disk-w-badge" cx="32" cy="442" r="11"/>
+<text class="ed-disk-w-badget" x="32" y="446" text-anchor="middle">1</text>
+<text class="ed-disk-w-t ed-disk-w-sm" x="50" y="438">eddy writes the transcript</text>
+<text class="ed-disk-w-t ed-disk-w-sm" x="50" y="455">as the service served it,</text>
+</g>
+<g class="ed-disk-w-cap ed-disk-w-cap31">
+<circle class="ed-disk-w-badge" cx="252" cy="442" r="11"/>
+<text class="ed-disk-w-badget" x="252" y="446" text-anchor="middle">2</text>
+<text class="ed-disk-w-t ed-disk-w-sm" x="270" y="438">and a plain copy with</text>
+<text class="ed-disk-w-t ed-disk-w-sm" x="270" y="455">one line per turn.</text>
+</g>
+<g class="ed-disk-w-cap ed-disk-w-cap32">
+<circle class="ed-disk-w-badge" cx="472" cy="442" r="11"/>
+<text class="ed-disk-w-badget" x="472" y="446" text-anchor="middle">3</text>
+<text class="ed-disk-w-t ed-disk-w-sm" x="490" y="438">One small line describes</text>
+<text class="ed-disk-w-t ed-disk-w-sm" x="490" y="455">the meeting for the inbox.</text>
+</g>
+<g class="ed-disk-w-cap ed-disk-w-cap33">
+<circle class="ed-disk-w-badge" cx="692" cy="442" r="11"/>
+<text class="ed-disk-w-badget" x="692" y="446" text-anchor="middle">4</text>
+<text class="ed-disk-w-t ed-disk-w-sm" x="710" y="438">The files stay on this host.</text>
+<text class="ed-disk-w-t ed-disk-w-sm" x="710" y="455">Only the line enters git.</text>
+</g>
+</svg>
