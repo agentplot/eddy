@@ -19,12 +19,14 @@ export default defineConfig({
         alt: 'eddy',
       },
       favicon: '/favicon.svg',
-      // The family's bar and footer from @agentplot/site-theme, which find
-      // eddy by the title above; the start page's hero, with the animated
-      // diagram, where every other page keeps Starlight's.
+      // The family's bar, footer and status banner from
+      // @agentplot/site-theme, which find eddy by the title above; the start
+      // page's hero, with the animated diagram, where every other page keeps
+      // Starlight's.
       components: {
         Header: '@agentplot/site-theme/starlight/Header.astro',
         Footer: '@agentplot/site-theme/starlight/Footer.astro',
+        Banner: '@agentplot/site-theme/starlight/Banner.astro',
         Hero: './src/components/Hero.astro',
       },
       // The family's type, colours and eddy's accent from the theme, then
