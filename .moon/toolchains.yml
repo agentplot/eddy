@@ -1,0 +1,7 @@
+$schema: 'https://moonrepo.dev/schemas/toolchains.json'
+
+# The proto that installs and runs the toolchains: devenv's, so a shell and
+# moon agree on it. A language toolchain joins here, reading its pin from
+# .prototools with versionFromPrototools, when eddy's code does.
+proto:
+  version: '0.63.1'

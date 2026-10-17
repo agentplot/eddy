@@ -1,0 +1,17 @@
+$schema: 'https://moonrepo.dev/schemas/project.json'
+
+# The site. Its prose is checked in the fast layer; its build is the Pages
+# workflow's and is not part of any gate.
+language: 'typescript'
+layer: 'application'
+
+tasks:
+  prose:
+    command: 'vale src/content/docs'
+    inputs: ['src/content/docs/**/*', '/.vale.ini', '/styles/**/*', '/devenv.nix', '/devenv.lock', '/.prototools']
+    tags: [check-fast]
+  build:
+    command: 'bun run build'
+    inputs: ['**/*', '/docs/diagrams/diagrams.py', '/devenv.nix', '/devenv.lock', '/.prototools']
+    outputs: ['dist']
+    options: {cache: false}

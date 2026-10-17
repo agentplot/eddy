@@ -1,0 +1,19 @@
+# moon runs eddy's checks. Each check is tagged with its layer, which a
+# branch's policy requires by tag:
+#   check-fast    the site's prose: seconds
+# A layer for the code joins when the code does (CLAUDE.md, Checks). A
+# task whose inputs are identical to a run that passed on this host, in
+# any worktree, replays from .moon/cache/outputs (a link into the git
+# common dir, made by devenv.nix) instead of running again, so every
+# task's inputs name everything it reads from the tree.
+$schema: 'https://moonrepo.dev/schemas/workspace.json'
+
+projects:
+  site: 'site'
+
+# --affected compares against the merge-base with main.
+vcs:
+  client: 'git'
+  defaultBranch: 'main'
+
+telemetry: false

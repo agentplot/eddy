@@ -1,0 +1,5 @@
+# The application tools, installed by proto and activated by the devenv
+# shell: moon itself. A language toolchain joins it when eddy's code
+# does (.moon/toolchains.yml reads the pins). The system tools, proto
+# among them, are devenv.nix's.
+moon = "2.6.1"
