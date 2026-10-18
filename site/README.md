@@ -35,11 +35,9 @@ runs.
 
 ## The look and the diagrams
 
-The theme is a local checkout until it is published:
-`"@agentplot/site-theme": "file:/Users/chuck/Code/github_agentplot/site-theme/main"`
-in `package.json`, which the Pages workflow cannot install. It moves to
-`github:agentplot/site-theme#<tag>` once the theme's repository is on
-GitHub and tagged.
+The theme comes from GitHub at a tag:
+`"@agentplot/site-theme": "github:agentplot/site-theme#v0.1.0"` in
+`package.json`.
 
 | file | what |
 |---|---|
